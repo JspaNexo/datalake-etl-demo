@@ -6,6 +6,8 @@ El proyecto local es [datalake-etl-demo](http://localhost:8111/buildConfiguratio
 
 El agente Windows local utiliza `C:/TeamCity/tools/python312/tools/python.exe`. Docker y Git estan en su PATH, y `env.DOCKER_CONFIG` apunta a `C:/TeamCity/buildAgent/conf/docker-cli` para localizar los plugins de Docker Desktop. Esta configuracion pertenece al agente, no al contenedor ETL.
 
+El runner Docker nativo local encuentra una copia del CLI en `C:/TeamCity/buildAgent/bin/docker.exe`, verificada contra la instalacion de Docker Desktop. Si actualizas Docker Desktop, actualiza tambien esta copia. El checkout actual se realiza en el servidor.
+
 ## Requisitos del agente
 
 - Windows o Linux, Python 3.12 con `venv` y `pip`.
@@ -18,7 +20,7 @@ Conecta el proyecto a su repositorio GitHub. Los siguientes pasos usan la raiz d
 
 | Step | Runner | Configuracion |
 |---|---|---|
-| Python Tests | Python | Python 3.12; Venv `.venv-ci`; requirements `requirements.txt`; Unittest; argumentos `discover -s tests -v`; Test reporting activado. |
+| Python Tests | Python | Python 3.12; Unittest; argumentos `discover -s tests -v`; Test reporting activado; `PYTHONPATH` apunta a `src`. Usa adaptadores en memoria. |
 | Docker Build ETL | Docker | Build; archivo `Dockerfile`; contexto `.`; plataforma Linux; imagen `%env.APP_IMAGE_BUILD_NUMBER%`. |
 | Integration Tests | Python | File `scripts/ci/run_integration.py`; Python 3.12; sin entorno virtual ni dependencias adicionales. |
 | Docker Push Staging | Docker | Push de `%env.APP_IMAGE_BUILD_NUMBER%`; conservar la imagen en el agente; condiciones `env.PUBLISH_IMAGE=true` y `teamcity.build.branch.is_default=true`. |
@@ -29,6 +31,7 @@ Parametros de la build configuration:
 | Parametro | Valor inicial |
 |---|---|
 | `env.PYTHON_EXECUTABLE` | `python3.12` o ruta del interprete en el agente |
+| `env.PYTHONPATH` | `%teamcity.build.checkoutDir%/src` |
 | `env.APP_IMAGE_BUILD_NUMBER` | `datalake-etl-demo:%build.number%` |
 | `env.CI_PROJECT_NAME` | `datalake-ci-%build.counter%` |
 | `env.CI_GIT_REVISION` | `%build.vcs.number%` |
@@ -42,6 +45,8 @@ artifacts/release/** => release
 ```
 
 Configura un VCS trigger para ejecutar el flujo con cada cambio. El repositorio utiliza actualmente `main`; las pruebas y el build pueden ejecutarse en todas las ramas, y el push solo en la rama predeterminada. Para publicar desde `develop`, cambia la condicion del push a `teamcity.build.branch=develop` y configura esa rama en el VCS root.
+
+Las pruebas unitarias usan la biblioteca estandar y adaptadores en memoria. Las dependencias de la aplicacion se instalan en el Dockerfile y se comprueban al ejecutar la integracion con la imagen construida.
 
 ## Usar configuracion como codigo
 

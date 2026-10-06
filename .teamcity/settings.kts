@@ -19,6 +19,7 @@ object DatalakeBuildPackDocker : BuildType({
 
     params {
         param("env.PYTHON_EXECUTABLE", "python3.12")
+        param("env.PYTHONPATH", "%teamcity.build.checkoutDir%/src")
         param("env.APP_IMAGE_BUILD_NUMBER", "datalake-etl-demo:%build.number%")
         param("env.CI_PROJECT_NAME", "datalake-ci-%build.counter%")
         param("env.CI_GIT_REVISION", "%build.vcs.number%")
@@ -35,10 +36,6 @@ object DatalakeBuildPackDocker : BuildType({
             name = "Python Tests"
             executionMode = BuildStep.ExecutionMode.RUN_ON_SUCCESS
             pythonVersion = customPython { executable = "%env.PYTHON_EXECUTABLE%" }
-            environment = venv {
-                name = ".venv-ci"
-                requirementsFile = "requirements.txt"
-            }
             command = unittest {
                 scriptArguments = "discover -s tests -v"
                 isTestReportingEnabled = true
