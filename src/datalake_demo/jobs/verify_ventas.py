@@ -2,13 +2,13 @@
 
 from decimal import Decimal
 
-from dagster import DagsterInstance
+from dagster import DagsterInstance, DagsterRunStatus, Definitions, build_sensor_context
 
 from datalake_demo.config.settings import GOLD_KEY, QUALITY_KEY, REJECTED_KEY, SILVER_KEY, Settings
 from datalake_demo.etl.extract import extract_source
 from datalake_demo.infra.minio_storage import MinioStorage
 from datalake_demo.infra.postgres_storage import PostgresStorage
-from datalake_demo.jobs.definitions import defs
+from datalake_demo.jobs.definitions import defs, ventas_csv_sensor
 
 
 def check(condition, description):
@@ -21,11 +21,34 @@ def verify():
     settings = Settings.from_env()
     lake = MinioStorage(settings)
     warehouse = PostgresStorage(settings)
+    Definitions.validate_loadable(defs)
     job = defs.resolve_job_def("etl_ventas")
+    for active_job in (job, defs.resolve_job_def("__ASSET_JOB")):
+        with DagsterInstance.ephemeral() as waiting_instance:
+            waiting_instance.create_run_for_job(active_job, status=DagsterRunStatus.STARTED)
+            waiting_tick = ventas_csv_sensor.evaluate_tick(build_sensor_context(
+                instance=waiting_instance, definitions=defs,
+            ))
+            check(not waiting_tick.run_requests and "en curso" in waiting_tick.skip_message,
+                  f"sensor espera mientras {active_job.name} esta activo")
     with DagsterInstance.get() as instance:
+        first_tick = ventas_csv_sensor.evaluate_tick(build_sensor_context(instance=instance, definitions=defs))
+        check(not first_tick.run_requests and bool(first_tick.skip_message),
+              "sensor espera una segunda lectura estable del CSV")
+        second_tick = ventas_csv_sensor.evaluate_tick(build_sensor_context(
+            instance=instance, definitions=defs, cursor=first_tick.cursor,
+        ))
+        check(len(second_tick.run_requests) == 1, "sensor solicita una ejecucion para el contenido nuevo")
+        request = second_tick.run_requests[0]
+        check(request.tags["source_sha256"] == extract_source(settings.source_path).sha256,
+              "sensor identifica exactamente el contenido que se procesara")
         for attempt in (1, 2):
-            result = job.execute_in_process(instance=instance)
+            result = job.execute_in_process(instance=instance, tags=request.tags if attempt == 1 else None)
             check(result.success, f"ejecucion Dagster {attempt} completada")
+        unchanged_tick = ventas_csv_sensor.evaluate_tick(build_sensor_context(
+            instance=instance, definitions=defs, cursor=second_tick.cursor,
+        ))
+        check(not unchanged_tick.run_requests, "sensor no vuelve a ejecutar el mismo contenido")
 
     source = extract_source(settings.source_path)
     bronze_key = source.bronze_key

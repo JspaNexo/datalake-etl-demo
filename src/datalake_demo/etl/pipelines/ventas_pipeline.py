@@ -41,12 +41,14 @@ class SalesPipeline:
             })
             raise
 
-    def bronze(self, source: str | Path | None = None) -> dict:
+    def bronze(self, source: str | Path | None = None, *, expected_sha256: str | None = None) -> dict:
         with self._stage("bronze"):
             extracted = extract_source(source if source is not None else self.settings.source_path)
+            if expected_sha256 is not None and extracted.sha256 != expected_sha256:
+                raise ValueError("El CSV cambio despues de la deteccion; espera la siguiente ejecucion del sensor")
             result = load_bronze(self.lake, extracted)
             self._log_stage("Bronze completado: %s filas; archivo %s", result["filas"], result["key"],
-                            stage="bronze", Rows=result["filas"], SourceKey=result["key"])
+                            stage="bronze", Rows=result["filas"], SourceKey=result["key"], SourceSha256=extracted.sha256)
             return result
 
     def silver(self, bronze_result: dict) -> dict:

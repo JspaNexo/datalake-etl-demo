@@ -93,6 +93,13 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(self.warehouse.quality, previous_quality)
         self.assertEqual(self.warehouse.rows, previous_parquet[GOLD_KEY])
 
+    def test_source_changed_after_detection_is_not_published(self):
+        with self.assertRaisesRegex(ValueError, "CSV cambio"):
+            self.pipeline.bronze(expected_sha256="a-different-content-hash")
+        self.assertEqual(self.lake.originals, {})
+        self.assertEqual(self.lake.parquet, {})
+        self.assertEqual(self.warehouse.rows, [])
+
 
 if __name__ == "__main__":
     unittest.main()

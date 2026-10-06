@@ -7,6 +7,7 @@ Proyecto simple de análisis de ventas con estructura clean code para ETL en Pyt
 - Lee un CSV de ventas y valida sus datos.
 - Genera las capas bronze, silver y gold en MinIO.
 - Ejecuta el ETL con Dagster y consulta los resultados con SQLPad/PostgreSQL.
+- Detecta cambios en el CSV y ejecuta automaticamente el ETL con un sensor de Dagster.
 - Guarda los logs en archivo y envía los eventos a Seq vía HTTP.
 
 ## Requisitos
@@ -22,6 +23,8 @@ docker compose exec dagster datalake-sync
 ```
 
 Para ejecutar desde Dagster, selecciona los cuatro assets y pulsa **Materialize**.
+
+El sensor `ventas_csv_sensor` se activa al iniciar Dagster y revisa el CSV cada 30 segundos. Edita y guarda `data/ventas.csv`; tras dos lecturas iguales ejecuta el ETL. Estado e historial en **Automation / Sensors** y **Runs**. [Detalles](docs/automatizacion.md).
 
 ## Accesos y credenciales
 

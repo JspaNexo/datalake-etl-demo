@@ -66,7 +66,7 @@ Se publica la misma imagen que paso la integracion. `Prepare Release Files` guar
 
 El script utiliza `compose.ci.yaml`, con un nombre unico `datalake-ci-...`, credenciales ficticias y volumenes propios. La imagen ETL no monta el codigo ni el CSV del host: verifica los archivos incluidos en la imagen construida. No publica puertos.
 
-Ejecuta el job Dagster dos veces, verifica MinIO/PostgreSQL y comprueba que Seq haya recibido las cuatro etapas de ambas ejecuciones. Guarda logs e informe en `artifacts/integration/`. Al finalizar, tambien en caso de error, elimina exclusivamente los recursos de ese proyecto de pruebas. El identificador no puede ser el de la demo y se rechazan volumenes externos, montajes del host y puertos publicados.
+Verifica el sensor de cambios del CSV (estabilidad, espera de trabajos activos y omision de contenido ya enviado). Ejecuta el job Dagster dos veces, la primera con las etiquetas de la solicitud del sensor, verifica MinIO/PostgreSQL y comprueba que Seq haya recibido las cuatro etapas de ambas ejecuciones. Guarda logs e informe en `artifacts/integration/`. Al finalizar, tambien en caso de error, elimina exclusivamente los recursos de ese proyecto de pruebas. El identificador no puede ser el de la demo y se rechazan volumenes externos, montajes del host y puertos publicados.
 
 Para probarlo localmente despues de construir la imagen:
 
