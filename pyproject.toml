@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datalake-demo"
+version = "0.1.0"
+description = "ETL de ventas con arquitectura medallon, MinIO, Dagster y SQLPad"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3==1.40.50",
+    "pyarrow==21.0.0",
+    "psycopg[binary]==3.2.10",
+    "dagster==1.13.25",
+    "dagster-webserver==1.13.25",
+    "python-dotenv==1.2.4",
+]
+
+[project.scripts]
+datalake-sync = "datalake_demo.jobs.run_ventas_sync:main"
+datalake-verify = "datalake_demo.jobs.verify_ventas:verify"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
