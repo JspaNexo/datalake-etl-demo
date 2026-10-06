@@ -1,0 +1,16 @@
+venta_id,fecha,ciudad,producto,cantidad,precio_unitario
+1,2026-10-01, La Paz ,café,2,25.00
+2,2026-10-01,SANTA CRUZ,té,3,10.00
+3,2026-10-01,la paz,CAFE,1,25.00
+4,2026-10-02,Cochabamba,galletas,5,8.00
+5,2026-10-02,Santa Cruz,cafe,4,25.00
+6,2026-10-02,La Paz,te,2,10.00
+7,2026-10-03,Cochabamba,cafe,3,25.00
+8,2026-10-03,La Paz,galletas,2,8.00
+1,2026-10-01,La Paz,cafe,2,25.00
+9,fecha_invalida,La Paz,cafe,1,25.00
+10,2026-10-03,Santa Cruz,te,0,10.00
+11,2026-10-03,La Paz,cafe,1,-5.00
+12,2026-10-03,,galletas,1,8.00
+13,2026-10-03,Cochabamba,te,dos,10.00
+

@@ -49,9 +49,9 @@ def validate_seq_events(events: list[dict]) -> dict:
     if len(groups) != 2 or any(set(stages) != expected_stages for stages in groups.values()):
         raise ValueError("Seq debe contener las cuatro etapas de las dos ejecuciones de Dagster")
     for stages in groups.values():
-        if stages["silver"].get("ValidRows") != 8 or stages["silver"].get("RejectedRows") != 6:
+        if stages["silver"].get("ValidRows") != 2008 or stages["silver"].get("RejectedRows") != 6:
             raise ValueError("Las metricas silver de Seq no coinciden con los datos de prueba")
-        if stages["gold"].get("RevenueBs") != "356.00":
+        if stages["gold"].get("RevenueBs") != "221634.82":
             raise ValueError("Los ingresos gold de Seq no coinciden con los datos de prueba")
     return {"runs": sorted(groups), "stages_per_run": 4, "seq_events": len(events)}
 

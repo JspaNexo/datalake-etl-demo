@@ -60,23 +60,23 @@ def verify():
     gold = lake.get_parquet(GOLD_KEY)
     rejected = lake.get_json(REJECTED_KEY)
     quality = lake.get_json(QUALITY_KEY)
-    check(len(silver) == 8 and len(rejected) == 6, "silver: 8 ventas validas y 6 rechazos")
-    check(len({r["venta_id"] for r in silver}) == 8, "silver sin IDs duplicados")
-    check(quality["filas_bronze"] == quality["filas_silver"] + quality["filas_rechazadas"] == 14,
+    check(len(silver) == 2008 and len(rejected) == 6, "silver: 2008 ventas validas y 6 rechazos")
+    check(len({r["venta_id"] for r in silver}) == 2008, "silver sin IDs duplicados")
+    check(quality["filas_bronze"] == quality["filas_silver"] + quality["filas_rechazadas"] == 2014,
           "conteos de calidad conciliados")
-    check(len(gold) == 7 and sum(r["ingresos"] for r in gold) == Decimal("356.00"),
-          "gold: 7 grupos y Bs 356.00 en Parquet")
+    check(len(gold) == 1608 and sum(r["ingresos"] for r in gold) == Decimal("221634.82"),
+          "gold: 1608 grupos y Bs 221634.82 en Parquet")
 
     with warehouse.connect() as connection:
         with connection.cursor() as cursor:
             cursor.execute("SELECT COUNT(*), SUM(ventas), SUM(unidades), SUM(ingresos) FROM gold.ventas_diarias")
-            check(cursor.fetchone() == (7, 8, 22, Decimal("356.00")),
+            check(cursor.fetchone() == (1608, 2008, 21478, Decimal("221634.82")),
                   "PostgreSQL conserva los totales tras dos ejecuciones")
             cursor.execute("SELECT fecha, ciudad, producto, ventas, unidades, ingresos FROM gold.ventas_diarias ORDER BY fecha, ciudad, producto")
             expected = [(r["fecha"], r["ciudad"], r["producto"], r["ventas"], r["unidades"], r["ingresos"]) for r in gold]
             check(cursor.fetchall() == expected, "PostgreSQL y gold en MinIO coinciden fila por fila")
             cursor.execute("SELECT COUNT(*), MIN(filas_bronze), MIN(filas_silver), MIN(filas_rechazadas) FROM gold.calidad")
-            check(cursor.fetchone() == (1, 14, 8, 6), "informe de calidad publicado sin duplicarse")
+            check(cursor.fetchone() == (1, 2014, 2008, 6), "informe de calidad publicado sin duplicarse")
     print("Prueba de integracion completada.")
 
 

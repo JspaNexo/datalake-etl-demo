@@ -5,7 +5,7 @@ from pathlib import Path
 from datalake_demo.etl.extract import read_sales
 from datalake_demo.etl.transform import aggregate_sales, clean_sales
 
-SOURCE = Path(__file__).resolve().parents[1] / "data" / "ventas.csv"
+SOURCE = Path(__file__).resolve().parent / "fixtures" / "ventas.csv"
 
 
 class SalesTests(unittest.TestCase):

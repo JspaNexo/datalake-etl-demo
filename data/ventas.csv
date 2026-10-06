@@ -11,6 +11,2005 @@ venta_id,fecha,ciudad,producto,cantidad,precio_unitario
 9,fecha_invalida,La Paz,cafe,1,25.00
 10,2026-10-03,Santa Cruz,te,0,10.00
 11,2026-10-03,La Paz,cafe,1,-5.00
-12,2026-10-03,,galletas,1,8.00
-13,2026-10-03,Cochabamba,te,dos,10.00
-
+12,2026-10-03,,galletas,1,80.00
+13,2026-10-03,Cochabamba,te,dos,100.00
+14,2026-10-03, SANTA CRUZ ,LECHE,17,8.25
+15,2026-10-06,Santa Cruz,arroz,14,12.96
+16,2026-10-02,Cobija,harina,19,10.92
+17,2026-09-06,Sucre,cafe,4,24.75
+18,2026-09-01,Santa Cruz,pan,16,0.75
+19,2026-09-17,Sucre,ACEITE,12,16.16
+20,2026-10-03,Tarija,harina,3,10.50
+21,2026-10-05, SANTA CRUZ ,agua,10,3.47
+22,2026-09-20,Trinidad,galletas,1,8.08
+23,2026-09-28,Potosi,pan,3,0.77
+24,2026-10-02,El Alto,AGUA,4,3.61
+25,2026-10-02,Cobija,jugo,13,6.36
+26,2026-10-01,Oruro,aceite,17,16.96
+27,2026-09-15,La Paz,jugo,5,5.46
+28,2026-09-07, COBIJA ,chocolate,20,15.45
+29,2026-10-01,Trinidad,GALLETAS,8,7.44
+30,2026-10-01,Trinidad,chocolate,18,14.70
+31,2026-09-20,Cobija,aceite,18,17.60
+32,2026-10-01,Cobija,harina,13,10.82
+33,2026-09-18,Sucre,azucar,1,8.19
+34,2026-09-30,Cochabamba,CHOCOLATE,17,15.75
+35,2026-09-17, POTOSI ,arroz,16,12.48
+36,2026-09-28,Cobija,pan,18,0.68
+37,2026-09-30,Oruro,leche,4,7.80
+38,2026-09-29,Cobija,azucar,6,9.27
+39,2026-09-18,Trinidad,TE,16,10.10
+40,2026-09-27,Santa Cruz,arroz,5,12.48
+41,2026-09-01,La Paz,te,15,10.80
+42,2026-09-13, COBIJA ,te,8,9.30
+43,2026-10-05,El Alto,cafe,9,27.50
+44,2026-09-01,Potosi,GALLETAS,11,8.64
+45,2026-09-09,El Alto,pan,18,0.73
+46,2026-09-09,Trinidad,jugo,20,6.36
+47,2026-09-27,Oruro,te,6,9.40
+48,2026-10-03,El Alto,azucar,14,9.18
+49,2026-09-13, COCHABAMBA ,AGUA,13,3.15
+50,2026-09-05,Santa Cruz,aceite,2,16.16
+51,2026-09-02,Potosi,cafe,17,26.25
+52,2026-09-20,Potosi,chocolate,15,15.00
+53,2026-09-30,Santa Cruz,pan,19,0.82
+54,2026-10-04,Cochabamba,GALLETAS,7,8.24
+55,2026-09-30,El Alto,leche,20,7.28
+56,2026-09-26, SANTA CRUZ ,agua,2,3.36
+57,2026-10-05,Cochabamba,cafe,2,26.00
+58,2026-09-02,Sucre,pan,5,0.83
+59,2026-10-04,Cobija,ARROZ,5,11.40
+60,2026-09-18,Cochabamba,aceite,14,17.12
+61,2026-09-25,Tarija,te,10,9.50
+62,2026-09-17,Potosi,galletas,15,8.40
+63,2026-09-30, TARIJA ,azucar,6,9.00
+64,2026-09-29,Cobija,PAN,4,0.80
+65,2026-09-07,Cobija,azucar,7,8.73
+66,2026-09-30,La Paz,te,11,10.30
+67,2026-09-12,Cobija,chocolate,1,15.15
+68,2026-10-06,Cochabamba,leche,19,8.03
+69,2026-09-18,Sucre,TE,18,10.80
+70,2026-09-19, SUCRE ,jugo,19,5.88
+71,2026-09-07,Cobija,galletas,9,7.44
+72,2026-09-07,Tarija,galletas,2,8.08
+73,2026-09-07,Cochabamba,chocolate,17,15.00
+74,2026-09-05,Oruro,JUGO,10,6.00
+75,2026-09-17,Cochabamba,azucar,3,8.10
+76,2026-09-27,Tarija,azucar,1,8.19
+77,2026-09-02, SANTA CRUZ ,arroz,10,11.16
+78,2026-10-06,Santa Cruz,chocolate,19,15.15
+79,2026-09-03,Potosi,PAN,13,0.75
+80,2026-09-30,El Alto,arroz,14,11.16
+81,2026-09-17,Potosi,agua,13,3.47
+82,2026-09-28,Potosi,cafe,1,24.75
+83,2026-09-08,Potosi,azucar,10,9.27
+84,2026-09-02, POTOSI ,JUGO,18,6.00
+85,2026-09-04,Sucre,agua,4,3.33
+86,2026-09-08,El Alto,te,2,9.40
+87,2026-09-20,Cobija,leche,1,7.73
+88,2026-09-23,El Alto,galletas,14,8.16
+89,2026-09-27,Tarija,ARROZ,8,11.28
+90,2026-09-02,Cochabamba,agua,18,3.75
+91,2026-09-10, TARIJA ,azucar,8,8.10
+92,2026-10-05,La Paz,azucar,16,9.27
+93,2026-09-09,Oruro,leche,19,6.90
+94,2026-09-03,Cochabamba,AGUA,17,3.43
+95,2026-10-04,Potosi,chocolate,11,13.65
+96,2026-09-16,La Paz,chocolate,16,13.65
+97,2026-10-03,Sucre,chocolate,5,15.30
+98,2026-10-06, POTOSI ,arroz,9,12.00
+99,2026-09-23,Sucre,LECHE,15,8.25
+100,2026-10-01,Trinidad,agua,19,3.47
+101,2026-09-27,Sucre,galletas,5,8.40
+102,2026-10-04,La Paz,leche,14,6.83
+103,2026-09-20,Cochabamba,te,12,10.70
+104,2026-09-07,Oruro,GALLETAS,1,8.56
+105,2026-09-20, SUCRE ,harina,19,9.56
+106,2026-10-05,Tarija,aceite,17,17.60
+107,2026-09-07,Cochabamba,agua,3,3.29
+108,2026-10-06,Tarija,leche,9,7.43
+109,2026-09-13,La Paz,HARINA,6,10.40
+110,2026-09-19,Oruro,agua,12,3.29
+111,2026-09-01,Tarija,arroz,20,13.20
+112,2026-09-23, TRINIDAD ,aceite,18,15.20
+113,2026-09-12,Cobija,cafe,11,26.75
+114,2026-09-02,Cochabamba,GALLETAS,4,8.48
+115,2026-09-05,La Paz,leche,12,7.43
+116,2026-09-10,Sucre,agua,20,3.82
+117,2026-09-07,Sucre,galletas,11,8.40
+118,2026-09-05,Santa Cruz,harina,13,10.29
+119,2026-09-08, EL ALTO ,AZUCAR,12,9.45
+120,2026-10-06,Trinidad,te,17,9.70
+121,2026-09-30,Potosi,chocolate,19,15.15
+122,2026-09-06,Santa Cruz,te,16,9.90
+123,2026-09-15,Oruro,chocolate,6,15.00
+124,2026-10-06,Tarija,AGUA,11,3.50
+125,2026-09-21,Trinidad,aceite,6,15.36
+126,2026-09-23, TRINIDAD ,arroz,12,12.36
+127,2026-09-14,El Alto,aceite,5,16.64
+128,2026-09-09,El Alto,chocolate,14,14.70
+129,2026-09-21,Potosi,TE,9,10.40
+130,2026-10-05,Oruro,galletas,9,7.76
+131,2026-10-06,Potosi,galletas,4,7.84
+132,2026-09-30,Oruro,jugo,13,6.12
+133,2026-09-22, LA PAZ ,agua,14,3.50
+134,2026-10-02,Santa Cruz,CHOCOLATE,18,15.90
+135,2026-09-23,Sucre,aceite,11,14.56
+136,2026-09-12,Tarija,harina,1,10.29
+137,2026-09-17,Cobija,harina,5,10.50
+138,2026-09-27,El Alto,chocolate,16,15.75
+139,2026-09-03,Potosi,CAFE,8,27.50
+140,2026-09-18, SANTA CRUZ ,chocolate,11,13.50
+141,2026-10-03,Sucre,pan,9,0.82
+142,2026-10-06,Potosi,te,7,10.70
+143,2026-09-10,La Paz,te,11,9.70
+144,2026-09-11,Trinidad,ARROZ,10,11.04
+145,2026-10-04,El Alto,aceite,19,17.12
+146,2026-09-02,Cochabamba,te,9,10.30
+147,2026-10-06, LA PAZ ,galletas,17,7.76
+148,2026-09-22,Trinidad,chocolate,11,15.15
+149,2026-10-01,Potosi,JUGO,9,6.30
+150,2026-09-03,Potosi,azucar,16,8.46
+151,2026-09-24,La Paz,pan,9,0.78
+152,2026-09-18,Sucre,leche,17,7.65
+153,2026-09-04,Oruro,arroz,14,11.04
+154,2026-10-05, COBIJA ,CHOCOLATE,10,15.75
+155,2026-10-03,El Alto,te,17,10.90
+156,2026-09-21,Potosi,pan,11,0.76
+157,2026-10-06,Cochabamba,te,6,9.80
+158,2026-09-25,Cobija,agua,4,3.82
+159,2026-09-30,Sucre,CAFE,8,24.00
+160,2026-10-04,Tarija,agua,5,3.71
+161,2026-10-02, SUCRE ,azucar,5,9.63
+162,2026-09-26,Potosi,leche,18,8.18
+163,2026-09-10,Cobija,arroz,20,12.84
+164,2026-09-10,Cochabamba,HARINA,5,11.34
+165,2026-09-03,La Paz,chocolate,9,14.85
+166,2026-09-18,Cochabamba,galletas,18,8.08
+167,2026-09-11,Cochabamba,pan,6,0.68
+168,2026-09-10, COCHABAMBA ,chocolate,14,16.50
+169,2026-10-05,El Alto,PAN,1,0.74
+170,2026-09-24,Sucre,agua,18,3.22
+171,2026-09-27,Trinidad,chocolate,5,15.00
+172,2026-10-03,Cochabamba,harina,2,11.03
+173,2026-09-07,La Paz,cafe,12,27.00
+174,2026-09-02,Oruro,LECHE,6,7.95
+175,2026-09-28, SUCRE ,te,14,9.60
+176,2026-09-15,Cochabamba,arroz,16,11.52
+177,2026-10-05,Potosi,galletas,14,8.24
+178,2026-09-14,Trinidad,leche,10,8.25
+179,2026-10-01,Trinidad,AGUA,3,3.36
+180,2026-09-06,Sucre,te,12,10.90
+181,2026-09-12,Cochabamba,te,7,11.00
+182,2026-09-28, TARIJA ,arroz,1,12.84
+183,2026-09-18,Cochabamba,chocolate,10,15.15
+184,2026-10-01,Tarija,CAFE,17,26.00
+185,2026-10-02,Oruro,leche,5,6.98
+186,2026-09-15,Cochabamba,agua,12,3.64
+187,2026-09-04,Tarija,jugo,18,6.00
+188,2026-09-06,Oruro,chocolate,15,15.60
+189,2026-10-04, POTOSI ,AGUA,17,3.26
+190,2026-09-03,Oruro,azucar,3,9.72
+191,2026-10-04,La Paz,te,15,10.80
+192,2026-09-30,Santa Cruz,aceite,20,16.80
+193,2026-09-10,Cobija,cafe,11,23.50
+194,2026-09-26,La Paz,TE,3,9.50
+195,2026-09-02,Cobija,azucar,2,8.28
+196,2026-09-08, EL ALTO ,agua,11,3.29
+197,2026-09-16,Oruro,pan,11,0.78
+198,2026-09-16,Sucre,aceite,17,16.00
+199,2026-10-02,Tarija,CAFE,8,27.25
+200,2026-09-13,Cochabamba,pan,4,0.81
+201,2026-09-25,Trinidad,jugo,16,6.36
+202,2026-09-14,La Paz,pan,13,0.68
+203,2026-09-09, COBIJA ,pan,10,0.73
+204,2026-09-18,Cobija,LECHE,14,8.10
+205,2026-10-04,La Paz,leche,6,7.95
+206,2026-09-24,Santa Cruz,jugo,7,6.48
+207,2026-09-11,Santa Cruz,agua,15,3.57
+208,2026-09-27,Santa Cruz,te,13,9.00
+209,2026-09-04,Sucre,ARROZ,9,11.40
+210,2026-09-24, COBIJA ,azucar,3,8.82
+211,2026-09-14,Cochabamba,cafe,18,23.25
+212,2026-09-03,Trinidad,agua,12,3.64
+213,2026-09-03,Cobija,chocolate,7,16.50
+214,2026-09-19,Trinidad,CAFE,3,23.75
+215,2026-09-14,Santa Cruz,azucar,1,8.91
+216,2026-09-03,El Alto,chocolate,16,14.70
+217,2026-10-05, SANTA CRUZ ,harina,6,11.24
+218,2026-10-05,Cobija,jugo,8,6.30
+219,2026-09-23,La Paz,AGUA,8,3.75
+220,2026-09-06,Tarija,pan,8,0.68
+221,2026-09-25,La Paz,aceite,18,14.72
+222,2026-09-12,Trinidad,chocolate,6,14.55
+223,2026-09-13,Cochabamba,agua,17,3.50
+224,2026-09-11, TARIJA ,AZUCAR,15,8.28
+225,2026-09-05,La Paz,leche,5,8.10
+226,2026-10-01,Cobija,arroz,5,12.00
+227,2026-10-06,Cochabamba,pan,4,0.71
+228,2026-09-06,La Paz,aceite,16,17.60
+229,2026-09-22,Tarija,CHOCOLATE,17,15.15
+230,2026-09-02,Santa Cruz,harina,9,10.19
+231,2026-09-16, SANTA CRUZ ,aceite,10,17.44
+232,2026-09-12,El Alto,chocolate,10,16.05
+233,2026-09-22,La Paz,cafe,6,26.00
+234,2026-09-16,El Alto,TE,16,9.50
+235,2026-10-01,El Alto,agua,4,3.22
+236,2026-10-04,Cochabamba,cafe,10,23.50
+237,2026-09-02,Tarija,azucar,15,9.81
+238,2026-09-25, ORURO ,galletas,1,8.32
+239,2026-09-07,El Alto,TE,8,10.00
+240,2026-09-25,Trinidad,te,9,10.40
+241,2026-09-20,Trinidad,harina,9,10.92
+242,2026-10-01,El Alto,aceite,10,16.00
+243,2026-10-06,Cochabamba,te,1,9.60
+244,2026-09-19,Sucre,HARINA,13,10.19
+245,2026-09-07, POTOSI ,galletas,8,8.16
+246,2026-09-22,Cochabamba,jugo,18,6.12
+247,2026-10-06,Sucre,jugo,10,6.42
+248,2026-09-17,Cobija,aceite,12,16.64
+249,2026-10-03,Sucre,GALLETAS,10,7.28
+250,2026-09-20,El Alto,arroz,6,12.36
+251,2026-09-29,El Alto,galletas,13,8.80
+252,2026-09-04, TRINIDAD ,chocolate,20,14.85
+253,2026-10-03,La Paz,jugo,11,6.42
+254,2026-09-15,Oruro,ACEITE,18,16.96
+255,2026-10-03,Oruro,chocolate,12,15.15
+256,2026-09-15,Tarija,agua,1,3.61
+257,2026-09-25,Cobija,aceite,20,16.16
+258,2026-09-25,Sucre,agua,12,3.15
+259,2026-09-14, SANTA CRUZ ,ARROZ,6,12.60
+260,2026-10-01,El Alto,aceite,6,16.48
+261,2026-09-24,Cobija,arroz,1,12.84
+262,2026-09-08,Santa Cruz,te,7,10.20
+263,2026-09-23,Santa Cruz,pan,17,0.83
+264,2026-09-16,Santa Cruz,ACEITE,11,15.84
+265,2026-09-05,La Paz,te,11,9.40
+266,2026-09-27, TRINIDAD ,chocolate,4,16.50
+267,2026-10-06,Santa Cruz,arroz,16,12.00
+268,2026-09-08,El Alto,galletas,3,8.08
+269,2026-09-29,Sucre,GALLETAS,15,7.44
+270,2026-09-09,Cobija,aceite,3,14.40
+271,2026-09-05,Trinidad,aceite,15,16.80
+272,2026-10-01,La Paz,pan,12,0.70
+273,2026-09-12, LA PAZ ,aceite,14,17.60
+274,2026-10-05,Santa Cruz,AZUCAR,17,8.73
+275,2026-09-23,Tarija,te,6,9.00
+276,2026-09-20,Cochabamba,jugo,9,6.18
+277,2026-09-15,Santa Cruz,harina,12,9.66
+278,2026-09-06,Tarija,chocolate,19,16.35
+279,2026-09-28,Oruro,LECHE,20,8.10
+280,2026-10-04, ORURO ,arroz,6,12.72
+281,2026-09-03,Tarija,azucar,18,9.81
+282,2026-09-30,Oruro,agua,10,3.61
+283,2026-09-29,Oruro,arroz,6,12.12
+284,2026-09-17,Cobija,AZUCAR,10,8.37
+285,2026-09-01,El Alto,arroz,7,13.08
+286,2026-09-21,El Alto,leche,4,7.50
+287,2026-09-28, TARIJA ,chocolate,20,15.60
+288,2026-09-07,El Alto,aceite,12,16.48
+289,2026-09-21,Trinidad,JUGO,19,6.12
+290,2026-09-23,Potosi,cafe,13,25.25
+291,2026-09-01,Oruro,pan,12,0.77
+292,2026-09-02,Trinidad,cafe,10,26.75
+293,2026-09-08,Cobija,cafe,11,25.75
+294,2026-09-20, ORURO ,ACEITE,9,14.40
+295,2026-09-04,Sucre,arroz,3,11.64
+296,2026-09-24,Cochabamba,cafe,20,26.75
+297,2026-10-05,Trinidad,te,17,11.00
+298,2026-09-19,El Alto,cafe,5,23.25
+299,2026-09-08,Tarija,ARROZ,3,11.16
+300,2026-09-25,Santa Cruz,jugo,2,5.64
+301,2026-09-02, TRINIDAD ,agua,10,3.61
+302,2026-09-29,Potosi,agua,7,3.19
+303,2026-09-10,Tarija,azucar,9,9.90
+304,2026-09-26,Cobija,GALLETAS,2,7.36
+305,2026-09-27,Trinidad,jugo,16,6.24
+306,2026-09-19,Cochabamba,cafe,4,23.50
+307,2026-09-18,Tarija,arroz,15,12.72
+308,2026-09-14, EL ALTO ,galletas,11,7.60
+309,2026-09-07,Oruro,CAFE,7,26.00
+310,2026-09-24,Tarija,te,13,9.20
+311,2026-09-06,La Paz,leche,9,8.03
+312,2026-09-22,Sucre,arroz,9,11.04
+313,2026-10-06,Oruro,agua,4,3.75
+314,2026-09-15,Santa Cruz,HARINA,15,11.24
+315,2026-09-11, POTOSI ,galletas,5,7.68
+316,2026-09-08,Cobija,azucar,13,8.82
+317,2026-10-01,El Alto,chocolate,12,14.40
+318,2026-09-24,Sucre,galletas,16,7.36
+319,2026-09-19,El Alto,GALLETAS,18,7.28
+320,2026-09-15,Cobija,leche,9,7.88
+321,2026-09-10,La Paz,azucar,9,9.36
+322,2026-09-07, TARIJA ,harina,7,10.40
+323,2026-09-27,Santa Cruz,azucar,3,9.45
+324,2026-09-20,Potosi,AZUCAR,5,8.19
+325,2026-09-28,Santa Cruz,azucar,3,8.64
+326,2026-09-01,Sucre,agua,1,3.50
+327,2026-09-21,Sucre,cafe,4,24.50
+328,2026-09-27,Trinidad,agua,11,3.75
+329,2026-09-03, EL ALTO ,ARROZ,12,12.96
+330,2026-10-02,Trinidad,chocolate,14,13.65
+331,2026-09-13,Potosi,leche,18,7.35
+332,2026-10-04,Cobija,chocolate,12,15.30
+333,2026-09-02,Cobija,te,14,10.40
+334,2026-09-03,La Paz,CHOCOLATE,16,14.10
+335,2026-09-08,Trinidad,aceite,12,14.88
+336,2026-09-16, ORURO ,te,14,9.70
+337,2026-09-14,Sucre,azucar,15,8.10
+338,2026-10-04,Santa Cruz,cafe,16,25.25
+339,2026-09-09,Cochabamba,ACEITE,7,17.44
+340,2026-09-20,Oruro,galletas,14,7.92
+341,2026-10-06,Tarija,aceite,14,15.36
+342,2026-09-25,Santa Cruz,aceite,12,15.36
+343,2026-10-02, EL ALTO ,agua,9,3.50
+344,2026-09-22,Sucre,HARINA,18,9.66
+345,2026-09-18,Sucre,harina,6,9.66
+346,2026-09-15,Trinidad,galletas,8,7.92
+347,2026-09-30,El Alto,aceite,15,14.56
+348,2026-09-19,Oruro,harina,3,11.55
+349,2026-09-30,La Paz,AZUCAR,11,8.28
+350,2026-10-03, TARIJA ,agua,14,3.50
+351,2026-09-08,Tarija,te,9,9.30
+352,2026-09-09,La Paz,agua,8,3.50
+353,2026-09-15,El Alto,leche,9,8.18
+354,2026-09-19,Oruro,CAFE,6,27.00
+355,2026-09-18,Oruro,pan,15,0.80
+356,2026-09-09,Santa Cruz,agua,9,3.43
+357,2026-09-12, TARIJA ,cafe,13,23.00
+358,2026-09-26,El Alto,leche,18,6.75
+359,2026-09-05,Cobija,CAFE,2,22.50
+360,2026-09-21,La Paz,chocolate,5,13.50
+361,2026-09-04,La Paz,pan,1,0.81
+362,2026-09-04,Santa Cruz,pan,7,0.82
+363,2026-09-13,Cochabamba,pan,8,0.68
+364,2026-09-03, POTOSI ,PAN,7,0.68
+365,2026-10-03,Oruro,agua,16,3.64
+366,2026-09-07,Cobija,harina,14,10.71
+367,2026-09-20,Santa Cruz,te,13,9.70
+368,2026-09-06,Potosi,te,1,9.50
+369,2026-10-03,La Paz,ARROZ,8,10.92
+370,2026-09-01,La Paz,azucar,7,8.10
+371,2026-09-11, LA PAZ ,azucar,13,8.64
+372,2026-09-28,Trinidad,te,16,9.30
+373,2026-09-12,Potosi,leche,19,7.28
+374,2026-09-09,La Paz,TE,14,10.40
+375,2026-09-06,La Paz,agua,5,3.82
+376,2026-09-02,Trinidad,pan,11,0.79
+377,2026-09-12,El Alto,harina,19,11.45
+378,2026-10-03, COCHABAMBA ,arroz,3,11.52
+379,2026-09-04,Sucre,PAN,5,0.79
+380,2026-09-27,Santa Cruz,agua,4,3.54
+381,2026-09-09,Cobija,te,19,10.90
+382,2026-09-19,El Alto,te,16,9.00
+383,2026-09-22,Tarija,pan,11,0.74
+384,2026-09-04,Cobija,LECHE,14,7.65
+385,2026-09-07, SUCRE ,leche,13,7.88
+386,2026-09-10,Tarija,agua,11,3.78
+387,2026-09-17,Trinidad,arroz,18,11.04
+388,2026-09-08,Cochabamba,azucar,15,8.55
+389,2026-09-15,Tarija,AZUCAR,14,9.18
+390,2026-09-11,Cochabamba,agua,19,3.15
+391,2026-09-01,El Alto,galletas,17,7.52
+392,2026-09-10, ORURO ,galletas,1,7.92
+393,2026-09-11,Cochabamba,aceite,17,15.52
+394,2026-09-02,Trinidad,HARINA,20,11.55
+395,2026-09-25,Potosi,cafe,2,27.50
+396,2026-10-04,Santa Cruz,agua,19,3.75
+397,2026-09-20,Trinidad,cafe,4,25.00
+398,2026-10-05,Santa Cruz,pan,2,0.70
+399,2026-09-10, SUCRE ,ARROZ,11,11.40
+400,2026-09-24,Tarija,jugo,14,5.76
+401,2026-09-09,Trinidad,agua,15,3.57
+402,2026-10-03,La Paz,chocolate,5,13.95
+403,2026-09-07,El Alto,aceite,6,14.88
+404,2026-09-23,Sucre,AGUA,13,3.19
+405,2026-09-02,Trinidad,cafe,6,23.50
+406,2026-09-26, SUCRE ,agua,19,3.57
+407,2026-09-14,El Alto,leche,9,7.28
+408,2026-09-19,Cochabamba,pan,13,0.75
+409,2026-09-05,Potosi,CAFE,7,25.25
+410,2026-09-04,Santa Cruz,cafe,14,24.00
+411,2026-10-01,Trinidad,te,3,11.00
+412,2026-09-18,Santa Cruz,galletas,8,7.76
+413,2026-09-27, POTOSI ,te,11,10.70
+414,2026-10-06,Potosi,CAFE,14,26.75
+415,2026-09-21,La Paz,te,9,9.60
+416,2026-09-05,Santa Cruz,aceite,2,15.36
+417,2026-09-12,La Paz,galletas,12,7.20
+418,2026-09-23,Cochabamba,te,6,9.00
+419,2026-09-08,Potosi,HARINA,3,10.29
+420,2026-09-17, COBIJA ,galletas,4,8.48
+421,2026-09-08,Sucre,azucar,19,8.10
+422,2026-09-14,Cobija,galletas,17,8.16
+423,2026-09-24,Santa Cruz,arroz,5,11.16
+424,2026-09-12,Cochabamba,GALLETAS,7,8.48
+425,2026-10-02,Tarija,arroz,18,12.48
+426,2026-09-03,Trinidad,aceite,10,14.40
+427,2026-09-11, POTOSI ,azucar,10,9.18
+428,2026-09-21,Cobija,harina,10,9.87
+429,2026-09-29,Oruro,GALLETAS,14,7.84
+430,2026-09-11,Santa Cruz,chocolate,20,16.50
+431,2026-09-17,Trinidad,azucar,15,9.18
+432,2026-09-18,Tarija,cafe,15,23.00
+433,2026-09-15,Sucre,jugo,13,5.46
+434,2026-09-02, POTOSI ,LECHE,10,8.10
+435,2026-09-30,Tarija,leche,1,8.10
+436,2026-09-22,Tarija,cafe,14,24.50
+437,2026-09-14,Sucre,arroz,17,12.48
+438,2026-09-25,El Alto,galletas,18,8.40
+439,2026-09-01,Trinidad,TE,20,10.90
+440,2026-09-17,Tarija,azucar,10,9.18
+441,2026-09-03, EL ALTO ,azucar,8,9.36
+442,2026-09-21,Cochabamba,cafe,14,26.75
+443,2026-09-27,Sucre,galletas,13,7.20
+444,2026-09-25,Trinidad,LECHE,17,8.10
+445,2026-09-06,Tarija,leche,14,7.43
+446,2026-10-02,Cobija,cafe,18,26.50
+447,2026-09-16,Cochabamba,cafe,19,25.75
+448,2026-09-03, COCHABAMBA ,galletas,19,8.80
+449,2026-09-27,Cobija,PAN,19,0.75
+450,2026-10-02,Sucre,harina,3,9.77
+451,2026-10-04,La Paz,cafe,20,26.25
+452,2026-09-02,Tarija,chocolate,1,14.25
+453,2026-09-11,Cobija,galletas,1,8.40
+454,2026-09-28,La Paz,TE,20,9.40
+455,2026-09-17, EL ALTO ,agua,10,3.33
+456,2026-09-10,Trinidad,agua,2,3.57
+457,2026-09-18,Cochabamba,azucar,7,8.28
+458,2026-09-18,Trinidad,pan,14,0.77
+459,2026-09-11,Oruro,ARROZ,7,11.16
+460,2026-10-01,Tarija,harina,15,10.92
+461,2026-09-06,El Alto,galletas,10,7.36
+462,2026-09-19, POTOSI ,arroz,10,12.48
+463,2026-09-26,El Alto,chocolate,15,14.10
+464,2026-09-05,Potosi,GALLETAS,18,8.64
+465,2026-09-14,El Alto,cafe,7,23.75
+466,2026-09-28,Santa Cruz,galletas,13,8.48
+467,2026-09-11,Tarija,jugo,6,6.24
+468,2026-10-04,Santa Cruz,arroz,7,11.16
+469,2026-09-18, COCHABAMBA ,JUGO,16,5.52
+470,2026-09-02,Potosi,chocolate,5,16.50
+471,2026-09-10,El Alto,leche,20,7.13
+472,2026-09-19,La Paz,pan,6,0.75
+473,2026-10-02,Tarija,leche,19,7.95
+474,2026-09-07,Sucre,PAN,16,0.77
+475,2026-09-21,Sucre,azucar,5,9.27
+476,2026-09-28, LA PAZ ,harina,9,10.50
+477,2026-09-05,La Paz,te,10,10.10
+478,2026-09-27,El Alto,azucar,2,9.72
+479,2026-10-05,Tarija,LECHE,10,7.50
+480,2026-09-30,La Paz,cafe,9,26.50
+481,2026-09-19,Potosi,te,18,9.30
+482,2026-09-14,La Paz,te,8,9.20
+483,2026-09-03, POTOSI ,aceite,9,14.40
+484,2026-09-13,Cobija,HARINA,15,11.13
+485,2026-09-22,Santa Cruz,jugo,20,6.18
+486,2026-09-05,Santa Cruz,cafe,2,23.25
+487,2026-09-22,El Alto,harina,10,10.29
+488,2026-09-05,Oruro,aceite,12,14.88
+489,2026-09-23,Potosi,PAN,8,0.82
+490,2026-09-04, COCHABAMBA ,te,6,10.10
+491,2026-09-03,Oruro,jugo,20,5.70
+492,2026-10-03,Santa Cruz,agua,20,3.19
+493,2026-09-22,Oruro,jugo,8,5.52
+494,2026-09-15,Oruro,GALLETAS,16,8.80
+495,2026-09-25,Sucre,arroz,19,12.48
+496,2026-09-07,El Alto,leche,14,7.95
+497,2026-09-10, POTOSI ,azucar,9,9.36
+498,2026-10-03,Oruro,azucar,1,9.00
+499,2026-10-03,El Alto,AZUCAR,2,9.18
+500,2026-10-04,Potosi,leche,12,7.73
+501,2026-09-12,Cochabamba,leche,18,7.35
+502,2026-09-05,Potosi,aceite,17,16.48
+503,2026-09-02,Sucre,azucar,12,9.18
+504,2026-09-24, SANTA CRUZ ,ARROZ,16,12.12
+505,2026-09-19,La Paz,aceite,6,16.48
+506,2026-10-05,Tarija,chocolate,4,16.50
+507,2026-09-14,Oruro,chocolate,8,13.80
+508,2026-09-06,Trinidad,jugo,9,5.82
+509,2026-09-18,La Paz,PAN,15,0.78
+510,2026-09-13,Trinidad,aceite,18,16.96
+511,2026-09-05, TARIJA ,chocolate,18,13.50
+512,2026-09-18,Oruro,harina,3,11.13
+513,2026-09-15,Tarija,te,9,9.10
+514,2026-09-21,Tarija,JUGO,14,5.82
+515,2026-09-13,Santa Cruz,azucar,19,9.09
+516,2026-09-26,Oruro,harina,4,11.13
+517,2026-09-29,La Paz,harina,12,10.71
+518,2026-09-08, TRINIDAD ,agua,16,3.29
+519,2026-09-25,Oruro,HARINA,13,10.40
+520,2026-09-10,Santa Cruz,galletas,1,7.60
+521,2026-10-06,Cobija,azucar,11,8.46
+522,2026-09-02,Potosi,agua,6,3.54
+523,2026-09-29,Trinidad,jugo,18,5.52
+524,2026-10-04,Trinidad,ACEITE,17,16.80
+525,2026-09-26, COBIJA ,azucar,4,9.45
+526,2026-10-05,El Alto,pan,12,0.75
+527,2026-09-27,Trinidad,leche,14,6.75
+528,2026-09-19,Potosi,leche,17,7.20
+529,2026-09-04,Tarija,PAN,18,0.80
+530,2026-09-22,Trinidad,agua,7,3.22
+531,2026-09-17,Tarija,galletas,10,8.48
+532,2026-10-02, TRINIDAD ,te,15,9.80
+533,2026-09-27,Cobija,arroz,9,10.92
+534,2026-09-01,Sucre,GALLETAS,3,8.64
+535,2026-09-11,Santa Cruz,pan,5,0.82
+536,2026-09-21,La Paz,arroz,15,12.00
+537,2026-10-04,La Paz,leche,2,7.88
+538,2026-10-03,Trinidad,pan,11,0.74
+539,2026-09-06, POTOSI ,PAN,1,0.70
+540,2026-09-12,Tarija,jugo,20,5.76
+541,2026-09-09,Cobija,arroz,15,11.04
+542,2026-09-21,Trinidad,azucar,4,8.82
+543,2026-09-08,Sucre,leche,4,7.50
+544,2026-10-02,El Alto,ARROZ,17,12.48
+545,2026-09-26,Sucre,aceite,16,15.84
+546,2026-09-20, TRINIDAD ,te,15,9.60
+547,2026-09-06,Cochabamba,arroz,6,11.76
+548,2026-10-06,Potosi,galletas,16,8.40
+549,2026-09-12,Santa Cruz,ARROZ,15,11.76
+550,2026-09-19,Oruro,cafe,8,22.75
+551,2026-09-18,El Alto,aceite,6,16.96
+552,2026-09-14,Cochabamba,azucar,4,8.91
+553,2026-09-22, SUCRE ,arroz,19,11.04
+554,2026-10-03,Cobija,ARROZ,4,13.20
+555,2026-09-22,Oruro,harina,16,10.40
+556,2026-09-21,Oruro,te,18,10.20
+557,2026-10-01,Tarija,galletas,3,7.52
+558,2026-09-10,Potosi,harina,1,10.40
+559,2026-09-24,Cochabamba,ACEITE,3,14.72
+560,2026-09-26, TARIJA ,galletas,20,8.00
+561,2026-09-23,Cobija,arroz,20,10.92
+562,2026-09-05,Cochabamba,pan,2,0.76
+563,2026-09-26,Cochabamba,agua,12,3.78
+564,2026-09-02,Oruro,ACEITE,11,16.16
+565,2026-10-03,Santa Cruz,chocolate,8,13.65
+566,2026-09-03,La Paz,chocolate,15,13.80
+567,2026-09-21, ORURO ,aceite,12,16.00
+568,2026-09-11,Trinidad,galletas,7,7.84
+569,2026-10-04,Cobija,AGUA,8,3.19
+570,2026-09-26,Cochabamba,galletas,11,7.84
+571,2026-10-04,El Alto,cafe,19,26.50
+572,2026-09-16,Cochabamba,arroz,17,11.76
+573,2026-09-22,Sucre,cafe,19,22.50
+574,2026-09-09, TARIJA ,TE,5,10.40
+575,2026-09-15,Potosi,leche,11,7.43
+576,2026-09-17,Cobija,arroz,10,12.60
+577,2026-09-23,Oruro,azucar,3,9.81
+578,2026-09-24,El Alto,leche,20,8.25
+579,2026-09-11,Sucre,HARINA,20,11.24
+580,2026-09-03,Santa Cruz,pan,7,0.77
+581,2026-09-13, SANTA CRUZ ,chocolate,18,15.60
+582,2026-09-16,Sucre,cafe,15,25.25
+583,2026-10-03,Cochabamba,aceite,1,16.00
+584,2026-09-27,Trinidad,AGUA,2,3.50
+585,2026-10-06,Santa Cruz,chocolate,7,15.75
+586,2026-09-10,Tarija,te,11,9.70
+587,2026-09-12,El Alto,agua,11,3.68
+588,2026-09-16, POTOSI ,harina,15,9.56
+589,2026-09-02,Trinidad,ARROZ,17,10.80
+590,2026-10-05,El Alto,cafe,13,23.75
+591,2026-09-15,Trinidad,pan,5,0.77
+592,2026-09-21,Oruro,azucar,6,9.45
+593,2026-09-27,Oruro,arroz,18,10.80
+594,2026-09-08,Oruro,ARROZ,2,11.88
+595,2026-09-11, SANTA CRUZ ,pan,13,0.69
+596,2026-09-09,Oruro,chocolate,6,15.00
+597,2026-09-10,Santa Cruz,leche,3,7.65
+598,2026-09-26,Potosi,pan,15,0.76
+599,2026-09-02,Cochabamba,ACEITE,12,17.12
+600,2026-10-03,Santa Cruz,agua,12,3.75
+601,2026-10-04,El Alto,arroz,8,11.40
+602,2026-09-02, EL ALTO ,jugo,15,6.30
+603,2026-09-07,La Paz,jugo,8,5.52
+604,2026-10-02,Trinidad,LECHE,1,7.65
+605,2026-09-26,La Paz,te,20,10.20
+606,2026-09-20,Trinidad,aceite,9,16.64
+607,2026-10-03,El Alto,pan,8,0.79
+608,2026-09-08,Tarija,agua,15,3.64
+609,2026-09-04, TARIJA ,HARINA,7,10.40
+610,2026-09-25,Cochabamba,arroz,11,12.96
+611,2026-09-25,Tarija,harina,2,9.98
+612,2026-10-06,Tarija,chocolate,8,15.60
+613,2026-09-30,Potosi,azucar,9,8.37
+614,2026-10-02,Potosi,AZUCAR,16,8.64
+615,2026-09-13,Sucre,chocolate,15,14.85
+616,2026-09-25, SUCRE ,aceite,7,14.40
+617,2026-09-26,Oruro,azucar,4,9.63
+618,2026-10-03,Santa Cruz,te,8,9.60
+619,2026-10-05,Santa Cruz,PAN,6,0.68
+620,2026-09-01,Potosi,azucar,10,9.72
+621,2026-09-14,Santa Cruz,leche,6,6.98
+622,2026-10-03,Tarija,chocolate,16,13.50
+623,2026-09-19, TRINIDAD ,agua,9,3.36
+624,2026-09-15,Santa Cruz,PAN,14,0.79
+625,2026-09-12,Potosi,te,16,9.50
+626,2026-09-21,Potosi,leche,14,7.50
+627,2026-09-20,Santa Cruz,pan,16,0.71
+628,2026-09-04,Tarija,cafe,3,23.50
+629,2026-09-12,La Paz,CHOCOLATE,13,15.30
+630,2026-09-30, COCHABAMBA ,pan,7,0.77
+631,2026-09-28,Trinidad,chocolate,13,15.45
+632,2026-09-05,El Alto,pan,13,0.81
+633,2026-09-05,Trinidad,arroz,14,11.76
+634,2026-09-07,Cobija,JUGO,19,6.36
+635,2026-09-14,Oruro,cafe,16,27.00
+636,2026-09-25,Trinidad,azucar,6,8.46
+637,2026-09-01, ORURO ,leche,2,7.35
+638,2026-10-06,Trinidad,te,10,11.00
+639,2026-10-02,Cobija,CAFE,18,23.75
+640,2026-09-23,Tarija,jugo,12,5.46
+641,2026-10-02,Oruro,arroz,9,11.88
+642,2026-09-23,La Paz,galletas,6,7.44
+643,2026-09-03,El Alto,aceite,16,16.48
+644,2026-09-28, SUCRE ,AGUA,11,3.36
+645,2026-09-03,Potosi,te,10,10.50
+646,2026-09-29,La Paz,agua,14,3.22
+647,2026-09-22,Sucre,pan,2,0.74
+648,2026-10-02,El Alto,chocolate,19,13.95
+649,2026-09-09,Tarija,GALLETAS,13,7.60
+650,2026-09-12,Oruro,jugo,4,6.24
+651,2026-10-06, LA PAZ ,pan,17,0.79
+652,2026-09-17,Oruro,leche,19,7.05
+653,2026-09-17,Cobija,chocolate,11,14.10
+654,2026-09-22,Cochabamba,GALLETAS,1,8.80
+655,2026-09-21,Oruro,arroz,3,12.96
+656,2026-09-03,Trinidad,aceite,9,15.36
+657,2026-10-06,Oruro,arroz,3,12.48
+658,2026-09-26, COCHABAMBA ,te,18,9.60
+659,2026-09-22,El Alto,JUGO,13,6.36
+660,2026-09-28,Santa Cruz,harina,6,9.66
+661,2026-10-03,La Paz,azucar,4,8.19
+662,2026-09-12,Sucre,leche,10,7.88
+663,2026-09-24,Cobija,pan,7,0.68
+664,2026-09-03,La Paz,LECHE,6,8.18
+665,2026-09-30, TRINIDAD ,chocolate,12,15.60
+666,2026-10-05,Oruro,agua,16,3.75
+667,2026-09-05,Santa Cruz,cafe,1,26.50
+668,2026-09-09,Santa Cruz,cafe,7,23.50
+669,2026-09-14,La Paz,JUGO,2,6.18
+670,2026-10-02,Potosi,azucar,16,8.28
+671,2026-10-02,Cochabamba,arroz,14,11.40
+672,2026-10-02, COBIJA ,harina,6,9.56
+673,2026-09-16,Oruro,leche,7,6.90
+674,2026-10-04,Tarija,TE,18,9.30
+675,2026-09-13,Oruro,azucar,7,9.36
+676,2026-09-03,Tarija,cafe,3,23.75
+677,2026-09-04,Santa Cruz,galletas,13,8.16
+678,2026-09-10,Tarija,te,1,11.00
+679,2026-09-15, POTOSI ,LECHE,5,8.03
+680,2026-09-02,Cochabamba,leche,16,6.83
+681,2026-09-27,Santa Cruz,azucar,12,9.36
+682,2026-09-09,Tarija,te,14,10.10
+683,2026-09-06,Cochabamba,azucar,7,9.90
+684,2026-09-08,Cobija,TE,9,10.20
+685,2026-09-14,Cochabamba,cafe,6,25.00
+686,2026-09-16, COBIJA ,agua,5,3.68
+687,2026-09-13,Santa Cruz,aceite,7,17.28
+688,2026-09-22,Cochabamba,agua,4,3.19
+689,2026-09-19,La Paz,GALLETAS,20,7.60
+690,2026-09-11,Oruro,azucar,4,8.82
+691,2026-09-15,Sucre,te,11,10.50
+692,2026-09-07,Trinidad,galletas,1,8.56
+693,2026-09-22, SUCRE ,harina,15,11.34
+694,2026-09-26,El Alto,JUGO,4,6.54
+695,2026-09-04,Potosi,arroz,20,12.00
+696,2026-09-08,Potosi,galletas,4,7.36
+697,2026-10-03,Santa Cruz,aceite,16,15.04
+698,2026-09-21,Cobija,chocolate,9,13.65
+699,2026-09-21,Santa Cruz,HARINA,14,10.92
+700,2026-09-28, COCHABAMBA ,te,4,9.20
+701,2026-09-07,Cochabamba,chocolate,4,15.30
+702,2026-09-19,Cobija,azucar,12,9.09
+703,2026-09-17,Cobija,chocolate,3,16.35
+704,2026-09-04,Potosi,PAN,17,0.72
+705,2026-10-05,Oruro,cafe,8,27.00
+706,2026-09-20,Oruro,arroz,20,11.04
+707,2026-09-01, SANTA CRUZ ,jugo,16,5.40
+708,2026-10-01,Santa Cruz,azucar,18,8.82
+709,2026-09-09,El Alto,JUGO,2,5.94
+710,2026-09-05,La Paz,azucar,17,8.10
+711,2026-09-15,Potosi,chocolate,11,13.65
+712,2026-09-07,Santa Cruz,jugo,19,6.12
+713,2026-09-04,Potosi,galletas,2,7.76
+714,2026-10-04, ORURO ,ACEITE,9,15.04
+715,2026-09-20,La Paz,arroz,2,12.48
+716,2026-09-07,Tarija,azucar,12,8.46
+717,2026-10-01,Oruro,jugo,15,5.40
+718,2026-09-15,Potosi,arroz,13,12.00
+719,2026-09-04,Tarija,GALLETAS,2,7.44
+720,2026-10-06,Santa Cruz,cafe,15,25.00
+721,2026-10-02, SUCRE ,cafe,1,22.50
+722,2026-09-14,Santa Cruz,leche,16,8.18
+723,2026-09-07,Santa Cruz,cafe,15,23.50
+724,2026-09-30,Trinidad,TE,6,9.40
+725,2026-09-21,Oruro,harina,19,11.34
+726,2026-09-04,Oruro,jugo,9,6.06
+727,2026-09-16,Cochabamba,jugo,3,5.76
+728,2026-09-02, SANTA CRUZ ,arroz,1,13.20
+729,2026-09-18,Cochabamba,ACEITE,9,14.56
+730,2026-10-04,Cobija,te,14,10.90
+731,2026-09-14,Potosi,chocolate,13,13.65
+732,2026-09-08,Tarija,aceite,7,15.20
+733,2026-09-25,Oruro,jugo,12,6.18
+734,2026-09-24,Trinidad,JUGO,4,6.24
+735,2026-09-28, EL ALTO ,azucar,10,8.73
+736,2026-09-03,Cochabamba,te,16,10.40
+737,2026-09-21,Cochabamba,harina,16,10.50
+738,2026-09-03,Potosi,chocolate,20,13.65
+739,2026-09-16,La Paz,AGUA,2,3.36
+740,2026-09-18,Oruro,leche,19,7.28
+741,2026-09-29,Potosi,galletas,11,7.28
+742,2026-09-29, TRINIDAD ,pan,7,0.81
+743,2026-09-02,Oruro,azucar,12,8.37
+744,2026-09-14,Oruro,HARINA,17,9.77
+745,2026-09-26,Potosi,jugo,9,5.52
+746,2026-09-18,La Paz,arroz,2,12.60
+747,2026-09-11,Potosi,te,5,10.70
+748,2026-09-22,La Paz,agua,14,3.85
+749,2026-09-16, EL ALTO ,CAFE,13,24.25
+750,2026-09-19,Oruro,leche,14,7.05
+751,2026-09-22,Tarija,agua,15,3.29
+752,2026-09-04,Santa Cruz,arroz,12,11.16
+753,2026-09-08,Tarija,chocolate,14,15.60
+754,2026-09-01,Tarija,LECHE,11,7.05
+755,2026-09-06,Tarija,leche,15,6.83
+756,2026-09-28, SUCRE ,arroz,19,13.08
+757,2026-09-13,Tarija,leche,17,7.65
+758,2026-09-09,Oruro,agua,7,3.68
+759,2026-09-22,Tarija,AGUA,18,3.36
+760,2026-10-02,Oruro,galletas,11,8.08
+761,2026-09-14,Tarija,cafe,9,27.00
+762,2026-09-03,Tarija,harina,6,10.08
+763,2026-09-25, TRINIDAD ,galletas,3,7.76
+764,2026-10-05,Santa Cruz,PAN,11,0.83
+765,2026-09-03,Trinidad,te,9,9.50
+766,2026-09-08,Oruro,jugo,18,6.36
+767,2026-10-04,Oruro,pan,12,0.75
+768,2026-09-09,Cochabamba,harina,17,10.50
+769,2026-09-22,Sucre,JUGO,19,6.36
+770,2026-09-12, EL ALTO ,arroz,5,12.24
+771,2026-09-07,El Alto,arroz,2,13.08
+772,2026-09-05,Potosi,te,15,10.80
+773,2026-09-09,La Paz,harina,15,11.03
+774,2026-09-06,Potosi,GALLETAS,14,7.60
+775,2026-09-17,Santa Cruz,azucar,14,8.37
+776,2026-09-14,Sucre,azucar,20,9.72
+777,2026-09-21, EL ALTO ,chocolate,19,15.30
+778,2026-09-27,Potosi,azucar,5,8.19
+779,2026-09-18,Potosi,LECHE,18,8.10
+780,2026-09-27,Potosi,agua,9,3.85
+781,2026-09-15,Cochabamba,galletas,18,8.16
+782,2026-09-12,Santa Cruz,aceite,11,16.96
+783,2026-09-25,El Alto,aceite,10,17.28
+784,2026-09-30, POTOSI ,CAFE,3,24.00
+785,2026-09-20,Potosi,arroz,19,11.64
+786,2026-09-26,Tarija,agua,8,3.57
+787,2026-10-05,Trinidad,harina,2,9.56
+788,2026-09-08,Tarija,azucar,15,8.73
+789,2026-09-28,Potosi,JUGO,10,6.36
+790,2026-09-25,Potosi,galletas,17,7.44
+791,2026-09-06, COBIJA ,agua,5,3.15
+792,2026-09-18,Tarija,chocolate,3,16.35
+793,2026-09-07,Trinidad,te,1,9.00
+794,2026-09-10,Potosi,HARINA,9,11.34
+795,2026-09-30,La Paz,cafe,11,23.25
+796,2026-09-10,Oruro,harina,20,10.19
+797,2026-09-12,La Paz,chocolate,10,13.80
+798,2026-09-01, LA PAZ ,agua,10,3.19
+799,2026-09-19,Potosi,PAN,10,0.74
+800,2026-09-02,Cobija,aceite,16,14.72
+801,2026-09-18,El Alto,aceite,13,16.64
+802,2026-09-07,Cobija,arroz,17,11.76
+803,2026-09-07,Potosi,arroz,9,12.00
+804,2026-09-10,Sucre,CAFE,11,24.75
+805,2026-09-12, ORURO ,te,3,9.30
+806,2026-09-19,Trinidad,chocolate,1,15.15
+807,2026-09-22,Potosi,azucar,18,9.72
+808,2026-09-19,Cochabamba,cafe,6,22.75
+809,2026-10-05,Oruro,ACEITE,16,17.44
+810,2026-09-08,La Paz,te,5,10.00
+811,2026-09-22,Santa Cruz,chocolate,16,16.05
+812,2026-09-17, EL ALTO ,pan,17,0.77
+813,2026-09-12,Oruro,cafe,13,26.25
+814,2026-09-27,Santa Cruz,AGUA,18,3.43
+815,2026-09-28,Santa Cruz,chocolate,17,15.15
+816,2026-09-02,El Alto,aceite,8,14.56
+817,2026-10-03,Trinidad,azucar,20,9.81
+818,2026-10-02,Santa Cruz,jugo,19,6.00
+819,2026-09-02, SANTA CRUZ ,CAFE,12,24.50
+820,2026-10-06,Tarija,leche,13,7.50
+821,2026-09-26,Cobija,azucar,3,9.72
+822,2026-09-13,Potosi,pan,9,0.80
+823,2026-09-10,Santa Cruz,arroz,15,12.72
+824,2026-10-06,Potosi,ARROZ,4,11.40
+825,2026-09-16,El Alto,aceite,9,16.64
+826,2026-10-05, TARIJA ,chocolate,13,13.50
+827,2026-09-08,Oruro,cafe,9,26.50
+828,2026-09-06,Tarija,harina,6,10.29
+829,2026-09-30,Santa Cruz,LECHE,9,7.28
+830,2026-09-03,Cobija,harina,7,9.98
+831,2026-09-27,Trinidad,cafe,20,26.50
+832,2026-09-08,Sucre,azucar,20,8.19
+833,2026-09-12, SUCRE ,harina,16,9.66
+834,2026-10-01,El Alto,GALLETAS,6,7.84
+835,2026-09-11,Sucre,chocolate,20,15.90
+836,2026-10-04,El Alto,aceite,14,16.80
+837,2026-09-25,La Paz,arroz,9,11.28
+838,2026-09-24,Trinidad,cafe,16,25.00
+839,2026-09-02,Potosi,AZUCAR,18,8.28
+840,2026-09-22, EL ALTO ,harina,1,11.03
+841,2026-09-12,Sucre,jugo,19,5.64
+842,2026-09-08,Sucre,jugo,4,5.76
+843,2026-09-03,Santa Cruz,pan,20,0.68
+844,2026-09-17,Potosi,PAN,16,0.70
+845,2026-09-27,El Alto,aceite,18,15.36
+846,2026-10-06,Santa Cruz,azucar,12,8.10
+847,2026-09-17, EL ALTO ,arroz,6,11.52
+848,2026-09-02,La Paz,azucar,11,8.91
+849,2026-09-29,Santa Cruz,AGUA,8,3.54
+850,2026-10-05,El Alto,galletas,10,8.24
+851,2026-09-11,Sucre,te,3,9.40
+852,2026-10-01,Trinidad,chocolate,19,14.25
+853,2026-10-01,Tarija,galletas,2,7.36
+854,2026-10-01, SANTA CRUZ ,PAN,9,0.74
+855,2026-09-07,Tarija,leche,6,7.13
+856,2026-09-24,El Alto,galletas,16,8.72
+857,2026-09-06,La Paz,agua,15,3.40
+858,2026-09-06,Tarija,galletas,17,7.84
+859,2026-09-21,Santa Cruz,LECHE,9,7.95
+860,2026-10-05,Tarija,cafe,1,27.50
+861,2026-09-12, COCHABAMBA ,harina,6,10.08
+862,2026-09-18,Cochabamba,harina,11,10.82
+863,2026-09-21,Potosi,cafe,9,24.25
+864,2026-09-10,Oruro,AZUCAR,11,8.73
+865,2026-09-01,Santa Cruz,galletas,4,7.92
+866,2026-09-18,Santa Cruz,galletas,7,7.60
+867,2026-09-18,Santa Cruz,azucar,11,9.18
+868,2026-09-13, POTOSI ,arroz,17,11.28
+869,2026-09-11,Sucre,CHOCOLATE,17,14.55
+870,2026-09-20,Trinidad,pan,17,0.76
+871,2026-09-12,La Paz,te,6,10.60
+872,2026-09-11,Cochabamba,galletas,17,7.92
+873,2026-09-04,El Alto,agua,15,3.36
+874,2026-09-28,La Paz,AZUCAR,11,8.55
+875,2026-09-03, SUCRE ,jugo,7,6.00
+876,2026-10-05,El Alto,cafe,11,25.00
+877,2026-09-03,Oruro,pan,18,0.74
+878,2026-09-16,Potosi,azucar,7,9.63
+879,2026-09-02,Sucre,JUGO,17,5.94
+880,2026-09-20,Santa Cruz,aceite,10,14.72
+881,2026-09-01,Sucre,galletas,15,8.24
+882,2026-09-16, POTOSI ,chocolate,13,14.70
+883,2026-09-19,Tarija,cafe,17,26.50
+884,2026-09-27,El Alto,HARINA,3,11.03
+885,2026-09-03,Cobija,azucar,9,8.28
+886,2026-09-25,El Alto,azucar,2,9.27
+887,2026-09-09,Potosi,azucar,14,9.54
+888,2026-10-02,Santa Cruz,harina,7,10.61
+889,2026-09-25, SUCRE ,TE,4,10.40
+890,2026-09-08,Potosi,jugo,4,6.00
+891,2026-09-28,La Paz,chocolate,1,14.25
+892,2026-09-14,Santa Cruz,arroz,4,11.04
+893,2026-09-23,Santa Cruz,azucar,9,9.81
+894,2026-10-02,Oruro,LECHE,4,8.03
+895,2026-09-19,Santa Cruz,aceite,15,15.36
+896,2026-10-06, SUCRE ,cafe,13,27.25
+897,2026-09-11,Oruro,arroz,19,12.72
+898,2026-09-17,Oruro,azucar,13,9.00
+899,2026-09-01,Sucre,PAN,11,0.68
+900,2026-09-10,La Paz,aceite,1,14.88
+901,2026-09-07,Sucre,jugo,10,5.58
+902,2026-09-10,Cochabamba,arroz,12,10.92
+903,2026-10-01, SANTA CRUZ ,harina,17,10.19
+904,2026-09-16,Cochabamba,ACEITE,7,16.32
+905,2026-09-26,Cobija,pan,10,0.80
+906,2026-09-26,La Paz,pan,3,0.73
+907,2026-09-02,Oruro,galletas,16,8.32
+908,2026-09-08,El Alto,azucar,13,9.09
+909,2026-09-09,Potosi,PAN,17,0.76
+910,2026-09-26, ORURO ,pan,14,0.83
+911,2026-09-25,Trinidad,pan,8,0.74
+912,2026-10-06,Oruro,agua,4,3.15
+913,2026-09-14,Cochabamba,harina,19,10.19
+914,2026-09-05,Potosi,CHOCOLATE,18,16.50
+915,2026-09-24,Tarija,arroz,10,11.88
+916,2026-09-18,Tarija,azucar,7,8.64
+917,2026-09-19, COCHABAMBA ,jugo,8,5.40
+918,2026-09-17,Sucre,cafe,19,24.75
+919,2026-09-16,Santa Cruz,PAN,12,0.79
+920,2026-10-01,Cochabamba,cafe,4,22.50
+921,2026-09-14,Santa Cruz,chocolate,13,14.25
+922,2026-09-13,Trinidad,cafe,2,24.75
+923,2026-10-04,Tarija,te,14,10.30
+924,2026-09-06, EL ALTO ,AZUCAR,11,9.09
+925,2026-09-27,Sucre,harina,7,10.50
+926,2026-09-12,Oruro,jugo,14,5.94
+927,2026-10-05,La Paz,agua,13,3.33
+928,2026-09-21,Santa Cruz,chocolate,10,15.75
+929,2026-09-07,Trinidad,HARINA,5,11.55
+930,2026-09-20,Trinidad,chocolate,13,14.10
+931,2026-09-03, COCHABAMBA ,te,6,9.40
+932,2026-09-22,El Alto,agua,18,3.75
+933,2026-09-23,Cobija,jugo,3,5.40
+934,2026-09-09,Cobija,AGUA,18,3.40
+935,2026-09-17,Cochabamba,leche,18,8.18
+936,2026-09-21,Sucre,chocolate,10,16.20
+937,2026-09-27,Santa Cruz,azucar,12,8.46
+938,2026-09-13, POTOSI ,agua,6,3.43
+939,2026-09-15,Sucre,ACEITE,3,17.12
+940,2026-10-01,Oruro,harina,13,11.55
+941,2026-09-11,Cobija,azucar,9,9.72
+942,2026-10-04,Santa Cruz,leche,17,6.90
+943,2026-09-01,Cobija,te,13,9.70
+944,2026-10-02,Trinidad,CHOCOLATE,4,13.80
+945,2026-09-20, TRINIDAD ,galletas,5,8.08
+946,2026-09-15,Tarija,azucar,7,9.09
+947,2026-09-24,Oruro,leche,14,7.13
+948,2026-09-14,La Paz,pan,7,0.78
+949,2026-09-09,Oruro,LECHE,14,6.83
+950,2026-09-15,Cochabamba,jugo,6,6.00
+951,2026-10-05,Cobija,arroz,11,11.16
+952,2026-09-17, POTOSI ,arroz,18,13.20
+953,2026-09-28,Cochabamba,agua,9,3.57
+954,2026-10-06,Oruro,GALLETAS,19,7.92
+955,2026-10-05,Cochabamba,jugo,16,5.82
+956,2026-09-13,Sucre,agua,14,3.61
+957,2026-09-01,Cochabamba,chocolate,6,14.10
+958,2026-09-03,El Alto,galletas,2,7.52
+959,2026-10-01, EL ALTO ,JUGO,18,5.52
+960,2026-10-01,Potosi,azucar,17,9.09
+961,2026-09-19,La Paz,harina,6,9.66
+962,2026-09-30,La Paz,arroz,15,12.72
+963,2026-10-01,Potosi,jugo,8,6.48
+964,2026-09-30,Cochabamba,HARINA,3,9.45
+965,2026-09-08,La Paz,chocolate,15,13.95
+966,2026-09-19, POTOSI ,agua,14,3.71
+967,2026-09-03,Sucre,leche,10,6.75
+968,2026-10-04,Tarija,te,15,9.40
+969,2026-09-17,Potosi,GALLETAS,1,8.24
+970,2026-09-16,Cobija,aceite,1,15.52
+971,2026-10-05,Trinidad,azucar,9,9.00
+972,2026-09-06,Sucre,agua,1,3.54
+973,2026-09-06, EL ALTO ,agua,7,3.47
+974,2026-09-03,Santa Cruz,PAN,8,0.69
+975,2026-09-10,Sucre,aceite,10,17.44
+976,2026-10-02,Sucre,galletas,20,8.16
+977,2026-09-04,La Paz,arroz,18,12.12
+978,2026-09-15,Trinidad,aceite,7,16.64
+979,2026-10-02,Potosi,LECHE,18,8.10
+980,2026-09-10, TRINIDAD ,cafe,18,25.00
+981,2026-09-06,Cochabamba,azucar,7,8.46
+982,2026-09-14,Oruro,agua,10,3.19
+983,2026-09-13,Trinidad,agua,10,3.29
+984,2026-09-23,Oruro,TE,9,10.30
+985,2026-09-29,Cobija,galletas,17,7.60
+986,2026-09-19,Potosi,leche,2,7.58
+987,2026-09-14, SUCRE ,pan,16,0.74
+988,2026-09-01,La Paz,chocolate,5,14.85
+989,2026-09-19,La Paz,JUGO,10,5.46
+990,2026-09-07,Trinidad,azucar,3,8.64
+991,2026-09-19,El Alto,pan,3,0.75
+992,2026-09-21,La Paz,chocolate,1,13.95
+993,2026-09-05,Trinidad,chocolate,10,13.95
+994,2026-09-22, TRINIDAD ,ACEITE,19,14.56
+995,2026-09-17,Santa Cruz,azucar,19,8.91
+996,2026-09-23,Cochabamba,leche,5,7.73
+997,2026-09-08,El Alto,azucar,14,9.63
+998,2026-09-30,Sucre,harina,2,11.24
+999,2026-09-28,Sucre,JUGO,10,6.42
+1000,2026-10-05,Cobija,galletas,11,8.80
+1001,2026-09-23, TRINIDAD ,galletas,17,7.92
+1002,2026-09-04,Trinidad,chocolate,6,15.45
+1003,2026-09-16,Potosi,azucar,5,8.82
+1004,2026-09-07,Potosi,CHOCOLATE,12,15.15
+1005,2026-09-04,Trinidad,aceite,9,17.44
+1006,2026-09-12,Tarija,azucar,16,9.36
+1007,2026-09-23,Potosi,te,3,10.80
+1008,2026-09-18, TRINIDAD ,harina,16,9.98
+1009,2026-10-04,Trinidad,PAN,12,0.81
+1010,2026-09-10,Sucre,galletas,14,8.72
+1011,2026-10-05,Potosi,te,8,10.10
+1012,2026-09-20,La Paz,agua,16,3.33
+1013,2026-09-30,Sucre,agua,8,3.36
+1014,2026-09-15,Potosi,LECHE,10,7.20
+1015,2026-09-23, SANTA CRUZ ,galletas,11,8.72
+1016,2026-09-09,La Paz,galletas,5,8.64
+1017,2026-09-29,Trinidad,pan,19,0.78
+1018,2026-09-26,Tarija,leche,12,7.58
+1019,2026-09-11,Oruro,PAN,6,0.76
+1020,2026-09-30,Tarija,harina,5,9.66
+1021,2026-10-04,Cobija,pan,16,0.68
+1022,2026-09-24, SANTA CRUZ ,galletas,2,7.52
+1023,2026-09-13,El Alto,jugo,7,6.00
+1024,2026-10-01,Santa Cruz,PAN,13,0.80
+1025,2026-09-24,Trinidad,azucar,13,9.00
+1026,2026-09-06,La Paz,cafe,17,25.25
+1027,2026-10-01,Sucre,jugo,13,6.54
+1028,2026-09-06,El Alto,agua,4,3.78
+1029,2026-09-05, SANTA CRUZ ,CHOCOLATE,6,15.60
+1030,2026-09-14,El Alto,jugo,3,6.60
+1031,2026-09-07,Potosi,arroz,4,11.52
+1032,2026-09-30,La Paz,leche,4,7.88
+1033,2026-09-24,Cobija,aceite,13,14.88
+1034,2026-09-25,La Paz,CAFE,14,23.75
+1035,2026-09-19,Sucre,arroz,11,12.00
+1036,2026-09-29, SANTA CRUZ ,galletas,6,7.28
+1037,2026-09-09,Sucre,cafe,8,23.50
+1038,2026-09-04,Potosi,pan,17,0.78
+1039,2026-10-01,Oruro,CAFE,9,22.50
+1040,2026-10-01,Trinidad,agua,6,3.71
+1041,2026-09-21,Cochabamba,agua,15,3.29
+1042,2026-10-02,Sucre,jugo,7,5.82
+1043,2026-09-05, SANTA CRUZ ,galletas,20,8.16
+1044,2026-09-13,La Paz,TE,9,9.00
+1045,2026-10-02,Oruro,leche,13,7.58
+1046,2026-10-03,Tarija,agua,12,3.43
+1047,2026-09-25,Trinidad,cafe,16,26.00
+1048,2026-09-23,Cobija,cafe,15,25.50
+1049,2026-10-05,Oruro,TE,2,9.10
+1050,2026-09-30, SUCRE ,azucar,14,8.46
+1051,2026-09-08,Potosi,aceite,12,14.88
+1052,2026-09-02,Trinidad,leche,15,7.50
+1053,2026-09-08,Trinidad,galletas,13,7.52
+1054,2026-09-27,Oruro,ARROZ,13,12.48
+1055,2026-09-14,Oruro,leche,16,6.83
+1056,2026-10-01,Cobija,aceite,6,17.12
+1057,2026-09-20, COCHABAMBA ,cafe,16,23.75
+1058,2026-09-29,Cobija,te,16,10.30
+1059,2026-10-02,La Paz,ARROZ,5,11.76
+1060,2026-09-30,Tarija,arroz,14,12.60
+1061,2026-10-04,Sucre,pan,11,0.72
+1062,2026-09-11,La Paz,azucar,16,9.45
+1063,2026-09-12,Cochabamba,cafe,5,25.75
+1064,2026-09-01, ORURO ,TE,7,10.00
+1065,2026-09-04,Santa Cruz,pan,10,0.72
+1066,2026-09-25,Potosi,leche,17,7.28
+1067,2026-09-02,Cobija,galletas,18,7.20
+1068,2026-09-06,Santa Cruz,chocolate,5,15.15
+1069,2026-09-28,La Paz,CAFE,12,24.25
+1070,2026-09-09,La Paz,agua,18,3.15
+1071,2026-09-25, COBIJA ,agua,10,3.29
+1072,2026-09-24,Santa Cruz,te,5,10.20
+1073,2026-09-21,Sucre,harina,6,10.19
+1074,2026-09-04,Santa Cruz,AGUA,13,3.78
+1075,2026-09-04,Cobija,azucar,16,8.73
+1076,2026-09-09,Trinidad,azucar,2,9.18
+1077,2026-09-27,Santa Cruz,pan,14,0.78
+1078,2026-09-24, POTOSI ,galletas,19,7.28
+1079,2026-10-02,Tarija,TE,13,9.80
+1080,2026-09-21,Santa Cruz,te,16,10.50
+1081,2026-09-07,Tarija,arroz,4,12.12
+1082,2026-09-07,Potosi,chocolate,5,15.30
+1083,2026-09-17,Cochabamba,harina,14,10.50
+1084,2026-10-05,Sucre,ARROZ,16,13.08
+1085,2026-09-09, POTOSI ,galletas,19,7.20
+1086,2026-10-01,Trinidad,pan,16,0.71
+1087,2026-09-17,Cobija,agua,5,3.19
+1088,2026-09-03,Tarija,galletas,11,7.76
+1089,2026-09-18,Oruro,LECHE,15,6.98
+1090,2026-09-05,Santa Cruz,te,6,10.10
+1091,2026-09-25,Trinidad,arroz,1,12.48
+1092,2026-09-20, SUCRE ,leche,6,6.90
+1093,2026-10-04,Cochabamba,cafe,2,26.75
+1094,2026-09-16,Sucre,ARROZ,5,11.64
+1095,2026-09-25,Santa Cruz,jugo,16,5.46
+1096,2026-09-18,Trinidad,chocolate,9,13.65
+1097,2026-10-01,Santa Cruz,agua,18,3.50
+1098,2026-09-02,El Alto,pan,6,0.82
+1099,2026-09-02, ORURO ,CAFE,20,24.75
+1100,2026-09-15,El Alto,galletas,18,8.72
+1101,2026-09-30,El Alto,agua,14,3.64
+1102,2026-09-19,Tarija,arroz,2,12.36
+1103,2026-09-26,La Paz,te,9,10.70
+1104,2026-09-09,Trinidad,CHOCOLATE,17,15.75
+1105,2026-09-04,El Alto,cafe,12,27.25
+1106,2026-09-28, COCHABAMBA ,leche,11,7.80
+1107,2026-09-24,La Paz,agua,5,3.78
+1108,2026-09-20,Potosi,harina,4,10.50
+1109,2026-09-30,Sucre,CHOCOLATE,9,13.80
+1110,2026-09-16,Cobija,chocolate,16,13.80
+1111,2026-09-16,La Paz,galletas,20,7.76
+1112,2026-10-02,Cochabamba,cafe,4,23.25
+1113,2026-09-17, TARIJA ,aceite,9,16.64
+1114,2026-09-28,Cochabamba,ACEITE,1,15.36
+1115,2026-09-02,El Alto,azucar,13,8.10
+1116,2026-09-17,Cobija,cafe,3,27.50
+1117,2026-09-09,El Alto,arroz,11,12.72
+1118,2026-09-21,Cochabamba,pan,17,0.69
+1119,2026-10-04,Oruro,PAN,8,0.82
+1120,2026-09-23, ORURO ,galletas,13,8.32
+1121,2026-09-24,Trinidad,aceite,20,15.36
+1122,2026-09-14,Potosi,cafe,12,23.00
+1123,2026-09-07,Tarija,chocolate,1,16.50
+1124,2026-09-21,Cobija,JUGO,17,6.30
+1125,2026-09-07,Cobija,te,11,10.60
+1126,2026-09-27,Potosi,harina,2,10.61
+1127,2026-09-24, COCHABAMBA ,galletas,5,8.32
+1128,2026-09-03,La Paz,azucar,5,9.27
+1129,2026-09-22,Oruro,AZUCAR,10,8.37
+1130,2026-09-23,Oruro,harina,1,10.50
+1131,2026-09-14,Oruro,jugo,2,5.82
+1132,2026-09-13,Sucre,cafe,6,26.50
+1133,2026-09-28,Sucre,galletas,13,8.72
+1134,2026-09-30, TRINIDAD ,LECHE,20,7.88
+1135,2026-09-08,Sucre,pan,4,0.71
+1136,2026-09-23,Sucre,harina,5,9.77
+1137,2026-09-28,Trinidad,cafe,12,25.50
+1138,2026-09-17,Oruro,azucar,19,8.37
+1139,2026-10-03,Potosi,CHOCOLATE,13,16.35
+1140,2026-10-06,Santa Cruz,leche,20,7.20
+1141,2026-09-28, TRINIDAD ,leche,15,8.03
+1142,2026-09-09,Cochabamba,harina,9,11.03
+1143,2026-10-01,Oruro,cafe,4,26.50
+1144,2026-09-08,La Paz,TE,6,9.10
+1145,2026-09-08,Cobija,arroz,4,11.88
+1146,2026-09-09,La Paz,azucar,8,9.90
+1147,2026-09-26,Tarija,te,10,9.90
+1148,2026-09-06, TRINIDAD ,chocolate,11,14.40
+1149,2026-09-10,Cochabamba,ARROZ,15,12.96
+1150,2026-09-18,Oruro,pan,10,0.75
+1151,2026-09-28,Trinidad,agua,2,3.85
+1152,2026-09-26,El Alto,azucar,6,9.81
+1153,2026-09-07,Trinidad,galletas,17,7.92
+1154,2026-10-03,Sucre,CHOCOLATE,14,13.80
+1155,2026-10-03, POTOSI ,cafe,14,23.25
+1156,2026-09-08,Trinidad,galletas,10,8.80
+1157,2026-09-24,El Alto,aceite,10,14.56
+1158,2026-09-12,Trinidad,chocolate,4,16.50
+1159,2026-09-23,Santa Cruz,GALLETAS,19,7.36
+1160,2026-09-04,Sucre,agua,2,3.22
+1161,2026-10-05,Cochabamba,leche,8,7.43
+1162,2026-09-21, COBIJA ,agua,3,3.15
+1163,2026-09-26,Cobija,leche,6,8.18
+1164,2026-10-02,El Alto,LECHE,1,7.13
+1165,2026-10-02,Santa Cruz,te,9,10.90
+1166,2026-09-15,Tarija,chocolate,11,15.15
+1167,2026-09-22,Potosi,aceite,18,15.84
+1168,2026-09-04,Tarija,azucar,6,9.00
+1169,2026-10-03, POTOSI ,AZUCAR,14,9.72
+1170,2026-09-24,Cochabamba,harina,5,10.40
+1171,2026-09-15,Potosi,pan,6,0.70
+1172,2026-09-22,Oruro,pan,12,0.73
+1173,2026-09-03,Santa Cruz,arroz,18,12.96
+1174,2026-10-03,El Alto,JUGO,14,5.52
+1175,2026-09-06,Cochabamba,te,7,11.00
+1176,2026-09-08, SANTA CRUZ ,aceite,12,17.28
+1177,2026-10-04,Tarija,chocolate,4,14.40
+1178,2026-09-18,Cobija,aceite,4,15.36
+1179,2026-09-06,Oruro,CAFE,14,27.50
+1180,2026-09-24,Oruro,cafe,2,23.00
+1181,2026-09-23,Santa Cruz,aceite,19,17.12
+1182,2026-09-18,Sucre,leche,1,8.18
+1183,2026-09-10, POTOSI ,cafe,11,27.00
+1184,2026-09-26,Cochabamba,LECHE,11,7.35
+1185,2026-09-21,La Paz,chocolate,11,14.70
+1186,2026-09-27,Trinidad,harina,7,10.19
+1187,2026-10-05,Potosi,leche,18,7.20
+1188,2026-09-03,Potosi,te,12,10.00
+1189,2026-09-17,Potosi,PAN,6,0.73
+1190,2026-09-23, SUCRE ,galletas,13,8.40
+1191,2026-09-17,Santa Cruz,cafe,5,23.00
+1192,2026-09-23,El Alto,cafe,6,26.25
+1193,2026-09-17,Santa Cruz,pan,7,0.80
+1194,2026-09-29,Oruro,AGUA,4,3.85
+1195,2026-10-01,Oruro,leche,16,7.65
+1196,2026-10-01,La Paz,jugo,8,5.46
+1197,2026-09-08, COCHABAMBA ,harina,14,10.61
+1198,2026-10-04,Cochabamba,aceite,13,14.40
+1199,2026-10-06,Potosi,GALLETAS,2,7.28
+1200,2026-09-14,Cochabamba,azucar,16,8.37
+1201,2026-09-19,Oruro,chocolate,3,16.50
+1202,2026-09-22,Sucre,azucar,9,8.19
+1203,2026-09-17,Trinidad,harina,7,9.87
+1204,2026-09-18, EL ALTO ,ARROZ,17,12.96
+1205,2026-10-02,El Alto,galletas,18,8.72
+1206,2026-09-11,Potosi,te,5,9.50
+1207,2026-09-17,Santa Cruz,cafe,19,26.00
+1208,2026-10-04,El Alto,jugo,1,6.06
+1209,2026-09-25,Trinidad,ARROZ,12,12.48
+1210,2026-09-14,La Paz,cafe,9,26.25
+1211,2026-09-03, SANTA CRUZ ,chocolate,16,14.10
+1212,2026-09-08,Potosi,cafe,3,23.00
+1213,2026-09-27,La Paz,harina,8,9.66
+1214,2026-09-15,El Alto,PAN,6,0.70
+1215,2026-09-20,Sucre,jugo,9,5.70
+1216,2026-09-22,Sucre,pan,9,0.68
+1217,2026-10-01,Tarija,te,3,10.70
+1218,2026-09-07, TARIJA ,chocolate,15,13.50
+1219,2026-09-29,La Paz,AZUCAR,10,9.09
+1220,2026-09-04,El Alto,leche,13,6.90
+1221,2026-09-06,La Paz,agua,17,3.22
+1222,2026-10-02,Cobija,chocolate,5,14.10
+1223,2026-09-23,Cochabamba,aceite,10,15.36
+1224,2026-09-05,Oruro,CHOCOLATE,8,16.20
+1225,2026-09-23, SUCRE ,aceite,12,16.48
+1226,2026-09-13,El Alto,azucar,13,9.09
+1227,2026-09-08,Cobija,jugo,9,5.82
+1228,2026-09-07,Oruro,aceite,7,14.40
+1229,2026-09-13,El Alto,ACEITE,14,15.20
+1230,2026-10-01,Trinidad,harina,1,9.56
+1231,2026-09-29,El Alto,te,6,10.80
+1232,2026-10-02, TARIJA ,te,18,9.30
+1233,2026-09-23,Trinidad,leche,17,7.73
+1234,2026-09-01,La Paz,PAN,9,0.74
+1235,2026-09-20,Cobija,te,20,10.90
+1236,2026-10-06,Cobija,cafe,8,25.00
+1237,2026-09-24,Cochabamba,galletas,6,8.16
+1238,2026-09-28,Potosi,arroz,20,12.12
+1239,2026-09-08, ORURO ,CAFE,15,23.00
+1240,2026-09-23,La Paz,jugo,6,6.48
+1241,2026-09-08,Potosi,jugo,9,6.60
+1242,2026-09-05,Cochabamba,leche,2,7.58
+1243,2026-10-05,El Alto,pan,2,0.74
+1244,2026-09-30,Sucre,ARROZ,15,11.76
+1245,2026-10-03,Sucre,galletas,18,7.76
+1246,2026-09-11, ORURO ,pan,6,0.68
+1247,2026-09-10,Sucre,aceite,16,15.68
+1248,2026-09-15,La Paz,pan,17,0.77
+1249,2026-09-18,Tarija,ARROZ,14,11.40
+1250,2026-09-07,Oruro,cafe,17,26.50
+1251,2026-09-06,Tarija,pan,19,0.68
+1252,2026-09-27,La Paz,te,15,11.00
+1253,2026-10-05, COCHABAMBA ,te,12,9.50
+1254,2026-09-15,Cochabamba,TE,13,10.50
+1255,2026-09-08,Tarija,leche,4,8.03
+1256,2026-09-03,Potosi,agua,18,3.50
+1257,2026-09-17,Oruro,cafe,18,25.25
+1258,2026-09-05,La Paz,jugo,10,5.88
+1259,2026-09-19,Oruro,CHOCOLATE,18,13.50
+1260,2026-09-02, COCHABAMBA ,cafe,17,25.75
+1261,2026-09-09,Cochabamba,cafe,8,24.75
+1262,2026-09-10,Cochabamba,azucar,14,9.72
+1263,2026-09-06,Sucre,cafe,1,23.75
+1264,2026-09-22,Potosi,PAN,19,0.80
+1265,2026-09-12,Cobija,leche,17,7.88
+1266,2026-10-02,Trinidad,te,15,9.40
+1267,2026-09-01, SANTA CRUZ ,te,12,9.60
+1268,2026-09-15,El Alto,cafe,1,23.00
+1269,2026-09-15,El Alto,CHOCOLATE,2,14.85
+1270,2026-09-15,La Paz,pan,7,0.77
+1271,2026-09-14,La Paz,te,20,9.40
+1272,2026-09-24,Potosi,arroz,20,12.60
+1273,2026-09-16,Trinidad,arroz,18,12.24
+1274,2026-10-01, TARIJA ,TE,17,10.40
+1275,2026-09-24,Tarija,pan,1,0.74
+1276,2026-09-21,Cobija,aceite,5,14.72
+1277,2026-09-21,Cochabamba,aceite,2,14.40
+1278,2026-10-04,Tarija,galletas,11,7.92
+1279,2026-09-23,Sucre,PAN,3,0.74
+1280,2026-10-06,El Alto,leche,5,6.98
+1281,2026-09-27, COCHABAMBA ,jugo,20,5.64
+1282,2026-09-13,Cobija,aceite,12,14.72
+1283,2026-09-26,Cobija,jugo,1,5.64
+1284,2026-09-15,Sucre,HARINA,8,9.98
+1285,2026-09-04,Cochabamba,leche,8,7.05
+1286,2026-10-05,Trinidad,cafe,15,24.00
+1287,2026-09-16,Tarija,te,11,10.80
+1288,2026-10-03, COCHABAMBA ,harina,19,9.77
+1289,2026-09-17,Trinidad,ARROZ,14,11.40
+1290,2026-09-03,Potosi,galletas,2,7.68
+1291,2026-09-05,Trinidad,cafe,9,27.25
+1292,2026-09-07,La Paz,arroz,1,12.72
+1293,2026-09-19,Sucre,galletas,20,8.00
+1294,2026-09-24,Trinidad,LECHE,13,7.73
+1295,2026-10-03, POTOSI ,jugo,15,5.88
+1296,2026-09-26,La Paz,pan,2,0.74
+1297,2026-10-04,La Paz,cafe,16,27.25
+1298,2026-09-26,Sucre,arroz,15,11.64
+1299,2026-09-26,Santa Cruz,CAFE,9,26.75
+1300,2026-09-04,Trinidad,azucar,6,8.10
+1301,2026-09-16,Cobija,azucar,17,9.09
+1302,2026-09-21, COCHABAMBA ,galletas,4,8.72
+1303,2026-10-04,Sucre,harina,5,10.82
+1304,2026-09-14,Santa Cruz,CAFE,10,26.25
+1305,2026-09-09,Santa Cruz,galletas,18,7.20
+1306,2026-09-02,Trinidad,chocolate,15,14.70
+1307,2026-09-09,Tarija,harina,2,11.34
+1308,2026-09-15,Tarija,agua,18,3.61
+1309,2026-09-17, ORURO ,CAFE,14,24.25
+1310,2026-09-13,Potosi,harina,14,9.45
+1311,2026-09-27,Cochabamba,te,15,9.70
+1312,2026-09-17,La Paz,jugo,19,6.36
+1313,2026-09-23,Potosi,pan,15,0.74
+1314,2026-09-28,El Alto,CAFE,17,23.25
+1315,2026-09-21,Trinidad,jugo,11,5.82
+1316,2026-09-21, COCHABAMBA ,cafe,8,27.00
+1317,2026-09-06,Santa Cruz,chocolate,2,14.70
+1318,2026-09-21,Potosi,pan,12,0.77
+1319,2026-09-23,La Paz,PAN,9,0.70
+1320,2026-09-04,Cobija,galletas,3,7.52
+1321,2026-09-15,Trinidad,azucar,12,8.91
+1322,2026-09-26,Oruro,te,13,9.70
+1323,2026-09-02, COBIJA ,chocolate,20,16.35
+1324,2026-09-21,Santa Cruz,GALLETAS,4,7.36
+1325,2026-09-11,Trinidad,chocolate,8,15.15
+1326,2026-10-01,Santa Cruz,aceite,16,17.28
+1327,2026-09-15,El Alto,aceite,7,16.48
+1328,2026-09-03,Potosi,harina,13,9.77
+1329,2026-09-04,Sucre,GALLETAS,15,8.24
+1330,2026-09-29, ORURO ,te,7,11.00
+1331,2026-09-05,Cobija,arroz,11,11.76
+1332,2026-09-14,Tarija,galletas,15,7.92
+1333,2026-09-26,Tarija,pan,12,0.69
+1334,2026-09-12,El Alto,AZUCAR,7,9.45
+1335,2026-09-03,Sucre,harina,12,11.13
+1336,2026-09-25,Cobija,galletas,19,8.16
+1337,2026-09-15, TARIJA ,aceite,14,17.60
+1338,2026-09-03,Oruro,aceite,16,14.56
+1339,2026-10-01,Oruro,AGUA,10,3.26
+1340,2026-09-24,Cobija,arroz,1,12.72
+1341,2026-10-02,Santa Cruz,chocolate,2,14.10
+1342,2026-09-30,Tarija,galletas,6,8.32
+1343,2026-09-24,Oruro,harina,2,10.40
+1344,2026-09-23, COBIJA ,LECHE,12,6.83
+1345,2026-09-18,El Alto,aceite,12,17.44
+1346,2026-09-13,El Alto,cafe,17,25.25
+1347,2026-10-04,Cochabamba,leche,9,8.10
+1348,2026-09-11,Potosi,azucar,7,8.37
+1349,2026-09-12,Potosi,GALLETAS,14,8.48
+1350,2026-09-10,Sucre,chocolate,1,15.00
+1351,2026-09-30, SANTA CRUZ ,jugo,12,6.06
+1352,2026-09-12,Cochabamba,harina,6,9.45
+1353,2026-09-23,Oruro,harina,7,10.71
+1354,2026-10-05,Cochabamba,CAFE,7,22.50
+1355,2026-09-10,Oruro,te,16,10.40
+1356,2026-09-29,Sucre,cafe,7,25.00
+1357,2026-09-08,Trinidad,pan,11,0.77
+1358,2026-09-17, TARIJA ,galletas,17,8.16
+1359,2026-09-01,Sucre,ARROZ,6,11.28
+1360,2026-10-02,La Paz,agua,9,3.64
+1361,2026-09-30,La Paz,te,19,9.60
+1362,2026-09-25,Santa Cruz,jugo,1,6.30
+1363,2026-09-08,El Alto,azucar,15,9.00
+1364,2026-09-22,Tarija,GALLETAS,1,8.16
+1365,2026-09-07, POTOSI ,te,7,10.10
+1366,2026-10-04,Cochabamba,agua,6,3.57
+1367,2026-10-05,Santa Cruz,harina,20,9.45
+1368,2026-09-13,Tarija,azucar,16,8.64
+1369,2026-09-09,Potosi,ACEITE,18,15.52
+1370,2026-09-10,Potosi,arroz,12,10.92
+1371,2026-09-28,Santa Cruz,pan,12,0.79
+1372,2026-09-15, COCHABAMBA ,chocolate,4,15.15
+1373,2026-09-23,Trinidad,galletas,12,7.52
+1374,2026-10-06,Oruro,TE,20,10.10
+1375,2026-09-22,El Alto,jugo,11,6.42
+1376,2026-09-12,Trinidad,azucar,8,8.28
+1377,2026-09-29,Santa Cruz,jugo,9,5.70
+1378,2026-09-21,Oruro,galletas,12,8.56
+1379,2026-09-30, POTOSI ,ARROZ,20,11.88
+1380,2026-09-06,La Paz,pan,17,0.68
+1381,2026-09-12,La Paz,aceite,2,16.16
+1382,2026-09-17,Potosi,arroz,18,12.12
+1383,2026-09-18,Sucre,agua,14,3.36
+1384,2026-09-15,Oruro,JUGO,17,6.42
+1385,2026-09-25,Trinidad,galletas,12,7.20
+1386,2026-09-07, SUCRE ,leche,2,8.03
+1387,2026-09-18,Tarija,harina,12,10.71
+1388,2026-10-03,Sucre,arroz,14,11.76
+1389,2026-09-04,El Alto,CAFE,14,24.25
+1390,2026-09-21,El Alto,te,11,9.30
+1391,2026-09-20,La Paz,pan,16,0.77
+1392,2026-09-29,El Alto,galletas,1,8.08
+1393,2026-09-23, POTOSI ,chocolate,12,16.05
+1394,2026-09-25,Tarija,AZUCAR,2,9.00
+1395,2026-09-05,Sucre,arroz,15,11.76
+1396,2026-10-05,Santa Cruz,te,4,9.20
+1397,2026-09-30,Sucre,galletas,5,8.48
+1398,2026-09-14,El Alto,azucar,17,8.28
+1399,2026-09-08,Trinidad,CHOCOLATE,4,15.90
+1400,2026-09-18, TRINIDAD ,te,17,9.50
+1401,2026-09-27,Trinidad,agua,14,3.40
+1402,2026-09-07,Cobija,leche,7,7.20
+1403,2026-09-15,Potosi,leche,16,7.65
+1404,2026-09-19,Trinidad,CHOCOLATE,1,15.75
+1405,2026-09-12,Cobija,galletas,6,7.36
+1406,2026-09-15,Sucre,harina,8,11.45
+1407,2026-09-11, COCHABAMBA ,galletas,19,7.28
+1408,2026-09-02,Cochabamba,agua,14,3.22
+1409,2026-09-10,Trinidad,ARROZ,6,12.36
+1410,2026-09-30,Sucre,agua,20,3.64
+1411,2026-09-22,Cochabamba,galletas,3,8.72
+1412,2026-09-10,Sucre,arroz,5,11.76
+1413,2026-09-12,Sucre,agua,8,3.26
+1414,2026-09-06, POTOSI ,JUGO,16,5.70
+1415,2026-09-20,Oruro,cafe,19,24.00
+1416,2026-09-30,Sucre,arroz,20,10.80
+1417,2026-09-27,Tarija,aceite,1,15.84
+1418,2026-09-26,La Paz,leche,20,7.73
+1419,2026-09-20,Trinidad,AGUA,7,3.15
+1420,2026-10-06,Tarija,galletas,3,8.72
+1421,2026-10-03, SANTA CRUZ ,jugo,16,6.48
+1422,2026-09-24,El Alto,te,4,9.10
+1423,2026-10-04,El Alto,jugo,13,5.94
+1424,2026-09-19,Trinidad,AGUA,2,3.22
+1425,2026-09-01,Cobija,azucar,15,8.73
+1426,2026-09-29,Trinidad,galletas,19,8.72
+1427,2026-09-04,Potosi,leche,13,6.98
+1428,2026-10-06, LA PAZ ,azucar,12,8.28
+1429,2026-09-17,Oruro,CHOCOLATE,7,14.25
+1430,2026-09-24,Tarija,harina,18,11.45
+1431,2026-09-21,El Alto,leche,17,7.95
+1432,2026-09-20,Oruro,leche,11,7.88
+1433,2026-09-16,Cochabamba,pan,11,0.78
+1434,2026-09-20,El Alto,ARROZ,5,12.60
+1435,2026-09-21, ORURO ,chocolate,4,13.80
+1436,2026-09-25,Cobija,pan,3,0.74
+1437,2026-09-17,Cochabamba,cafe,14,23.50
+1438,2026-09-12,Trinidad,te,9,9.90
+1439,2026-09-23,Sucre,JUGO,6,5.52
+1440,2026-09-23,Cochabamba,pan,4,0.72
+1441,2026-09-03,Tarija,leche,6,7.65
+1442,2026-09-07, ORURO ,jugo,11,5.64
+1443,2026-09-17,La Paz,leche,14,7.88
+1444,2026-09-28,Trinidad,HARINA,18,10.61
+1445,2026-10-06,La Paz,arroz,18,12.96
+1446,2026-09-20,La Paz,leche,18,6.90
+1447,2026-09-14,Santa Cruz,arroz,12,12.24
+1448,2026-09-11,Oruro,arroz,14,12.48
+1449,2026-09-15, TRINIDAD ,ACEITE,3,15.04
+1450,2026-09-07,Santa Cruz,te,3,10.80
+1451,2026-09-02,El Alto,galletas,14,7.20
+1452,2026-09-05,Trinidad,jugo,3,6.48
+1453,2026-09-17,Sucre,leche,14,8.03
+1454,2026-09-15,Cobija,CAFE,9,24.25
+1455,2026-10-03,Tarija,arroz,15,12.72
+1456,2026-09-11, ORURO ,agua,19,3.82
+1457,2026-10-01,Santa Cruz,azucar,15,8.28
+1458,2026-09-19,Cochabamba,te,16,9.50
+1459,2026-09-08,Sucre,CAFE,10,24.00
+1460,2026-09-19,Cochabamba,chocolate,14,14.25
+1461,2026-09-12,Cochabamba,leche,12,7.73
+1462,2026-09-22,Cochabamba,agua,7,3.57
+1463,2026-09-30, TRINIDAD ,te,7,10.30
+1464,2026-09-22,Potosi,ARROZ,9,12.36
+1465,2026-09-18,Santa Cruz,te,16,9.30
+1466,2026-09-27,Santa Cruz,te,17,9.60
+1467,2026-10-01,Santa Cruz,galletas,6,8.48
+1468,2026-09-05,Cobija,pan,9,0.83
+1469,2026-10-04,Santa Cruz,LECHE,4,6.98
+1470,2026-09-27, ORURO ,jugo,6,5.76
+1471,2026-09-26,Potosi,jugo,19,5.46
+1472,2026-09-23,Potosi,harina,4,9.87
+1473,2026-09-12,Santa Cruz,harina,15,11.45
+1474,2026-09-07,Sucre,ACEITE,16,16.48
+1475,2026-09-04,Santa Cruz,harina,3,9.87
+1476,2026-09-19,El Alto,agua,17,3.50
+1477,2026-09-18, LA PAZ ,arroz,12,13.20
+1478,2026-09-20,Santa Cruz,arroz,16,12.36
+1479,2026-09-25,Sucre,CHOCOLATE,13,16.05
+1480,2026-09-12,Sucre,te,1,9.70
+1481,2026-09-17,Santa Cruz,jugo,9,6.12
+1482,2026-09-06,Oruro,te,1,9.80
+1483,2026-09-05,Potosi,arroz,5,12.12
+1484,2026-10-03, EL ALTO ,PAN,16,0.82
+1485,2026-10-06,Tarija,agua,4,3.15
+1486,2026-09-27,Santa Cruz,chocolate,13,13.50
+1487,2026-10-05,Santa Cruz,chocolate,2,15.30
+1488,2026-10-05,Santa Cruz,arroz,6,12.24
+1489,2026-09-25,Potosi,AGUA,14,3.15
+1490,2026-09-23,Tarija,cafe,4,23.25
+1491,2026-09-12, SUCRE ,chocolate,10,16.20
+1492,2026-09-04,El Alto,arroz,14,11.88
+1493,2026-09-05,Potosi,pan,4,0.83
+1494,2026-09-21,Santa Cruz,CHOCOLATE,16,15.90
+1495,2026-09-11,El Alto,aceite,15,15.52
+1496,2026-09-20,Cochabamba,te,6,9.40
+1497,2026-09-25,Potosi,cafe,8,27.25
+1498,2026-09-09, TRINIDAD ,arroz,15,12.00
+1499,2026-09-01,Santa Cruz,AZUCAR,7,9.90
+1500,2026-09-06,El Alto,aceite,6,15.52
+1501,2026-09-28,Cochabamba,jugo,11,5.82
+1502,2026-10-05,Sucre,jugo,10,6.06
+1503,2026-09-01,Potosi,arroz,18,12.12
+1504,2026-09-21,Sucre,JUGO,15,6.60
+1505,2026-09-01, COCHABAMBA ,agua,13,3.29
+1506,2026-09-13,La Paz,arroz,6,13.20
+1507,2026-10-04,Cobija,harina,14,11.24
+1508,2026-09-03,Santa Cruz,leche,1,7.58
+1509,2026-09-11,La Paz,AGUA,2,3.50
+1510,2026-09-08,El Alto,leche,16,7.43
+1511,2026-09-16,Trinidad,pan,14,0.79
+1512,2026-09-20, POTOSI ,aceite,9,14.72
+1513,2026-09-09,Trinidad,cafe,18,27.25
+1514,2026-09-12,Oruro,CAFE,17,25.25
+1515,2026-09-12,Sucre,harina,9,11.45
+1516,2026-09-03,Oruro,arroz,20,10.92
+1517,2026-09-25,Sucre,galletas,9,7.60
+1518,2026-10-05,Santa Cruz,te,10,11.00
+1519,2026-09-29, POTOSI ,AGUA,14,3.22
+1520,2026-09-17,La Paz,leche,13,7.58
+1521,2026-09-27,La Paz,pan,13,0.82
+1522,2026-10-02,Trinidad,chocolate,18,13.80
+1523,2026-09-17,Potosi,agua,11,3.47
+1524,2026-09-23,Potosi,JUGO,8,6.12
+1525,2026-09-29,Sucre,azucar,16,9.81
+1526,2026-09-01, COCHABAMBA ,chocolate,13,14.70
+1527,2026-10-05,Cochabamba,harina,2,10.19
+1528,2026-09-19,Santa Cruz,chocolate,1,13.65
+1529,2026-09-05,Trinidad,TE,12,9.40
+1530,2026-09-20,Oruro,te,14,10.60
+1531,2026-09-20,La Paz,harina,6,10.61
+1532,2026-09-24,Cochabamba,te,13,9.40
+1533,2026-10-02, LA PAZ ,harina,10,10.50
+1534,2026-10-03,Sucre,LECHE,13,7.13
+1535,2026-09-23,Tarija,leche,5,7.35
+1536,2026-09-06,La Paz,te,7,9.10
+1537,2026-09-26,Tarija,te,5,10.30
+1538,2026-09-06,Cochabamba,harina,5,10.40
+1539,2026-09-11,Potosi,LECHE,20,7.80
+1540,2026-09-22, EL ALTO ,leche,15,8.25
+1541,2026-09-05,Sucre,galletas,13,7.68
+1542,2026-09-19,Potosi,azucar,8,8.73
+1543,2026-09-21,Oruro,cafe,11,22.50
+1544,2026-09-09,Cobija,PAN,13,0.77
+1545,2026-09-14,La Paz,galletas,4,8.56
+1546,2026-09-06,Trinidad,galletas,13,7.60
+1547,2026-09-20, COBIJA ,jugo,8,6.48
+1548,2026-09-09,Cochabamba,leche,15,7.28
+1549,2026-09-09,Potosi,CHOCOLATE,1,15.30
+1550,2026-10-06,Santa Cruz,galletas,20,8.16
+1551,2026-10-02,El Alto,harina,15,11.34
+1552,2026-09-06,Cobija,galletas,14,8.56
+1553,2026-09-07,Tarija,jugo,7,6.06
+1554,2026-09-24, EL ALTO ,PAN,20,0.83
+1555,2026-09-29,La Paz,te,1,10.10
+1556,2026-09-01,Trinidad,galletas,6,7.68
+1557,2026-09-01,Cobija,galletas,15,7.44
+1558,2026-09-03,Trinidad,azucar,2,8.46
+1559,2026-09-04,El Alto,CAFE,14,22.50
+1560,2026-09-21,Cochabamba,aceite,5,17.28
+1561,2026-09-16, COCHABAMBA ,harina,4,10.82
+1562,2026-09-19,Tarija,agua,17,3.85
+1563,2026-09-07,Sucre,harina,6,10.08
+1564,2026-09-19,Cochabamba,HARINA,14,11.13
+1565,2026-10-01,Potosi,cafe,12,25.50
+1566,2026-09-09,El Alto,azucar,5,9.09
+1567,2026-09-11,Tarija,agua,4,3.19
+1568,2026-09-01, TRINIDAD ,galletas,18,7.84
+1569,2026-09-05,El Alto,LECHE,11,7.58
+1570,2026-09-26,Sucre,galletas,3,7.92
+1571,2026-09-19,Cobija,agua,2,3.50
+1572,2026-09-08,Potosi,azucar,19,9.00
+1573,2026-09-24,Sucre,aceite,16,16.64
+1574,2026-09-09,Cochabamba,JUGO,9,5.52
+1575,2026-09-21, TARIJA ,jugo,6,5.88
+1576,2026-09-25,El Alto,agua,16,3.61
+1577,2026-09-16,Oruro,te,10,10.80
+1578,2026-09-16,Trinidad,chocolate,14,15.75
+1579,2026-09-29,Cochabamba,LECHE,18,7.73
+1580,2026-09-01,Sucre,jugo,12,6.30
+1581,2026-09-18,Cobija,agua,4,3.26
+1582,2026-09-01, COBIJA ,pan,6,0.74
+1583,2026-09-14,Trinidad,galletas,5,8.16
+1584,2026-10-03,Cochabamba,PAN,9,0.82
+1585,2026-09-29,Oruro,agua,12,3.22
+1586,2026-09-09,Trinidad,te,1,9.80
+1587,2026-09-03,Tarija,arroz,14,12.72
+1588,2026-09-20,Oruro,chocolate,11,13.65
+1589,2026-09-12, SUCRE ,AGUA,10,3.75
+1590,2026-09-23,Potosi,jugo,10,6.06
+1591,2026-09-12,Trinidad,pan,1,0.71
+1592,2026-10-01,El Alto,galletas,6,8.00
+1593,2026-09-22,Trinidad,pan,19,0.69
+1594,2026-09-13,El Alto,AZUCAR,18,8.82
+1595,2026-09-19,La Paz,galletas,20,7.20
+1596,2026-09-08, SUCRE ,chocolate,20,16.20
+1597,2026-09-25,Sucre,harina,10,10.92
+1598,2026-09-03,El Alto,chocolate,8,14.40
+1599,2026-09-10,Potosi,TE,7,10.20
+1600,2026-10-05,Tarija,aceite,7,15.36
+1601,2026-09-06,Potosi,pan,20,0.73
+1602,2026-09-24,Trinidad,jugo,14,6.48
+1603,2026-09-07, COBIJA ,pan,7,0.74
+1604,2026-09-11,El Alto,ARROZ,16,11.40
+1605,2026-09-20,El Alto,cafe,8,22.75
+1606,2026-09-10,Sucre,galletas,4,7.92
+1607,2026-09-14,Santa Cruz,pan,1,0.70
+1608,2026-09-25,Potosi,azucar,11,8.19
+1609,2026-09-23,Potosi,LECHE,2,6.83
+1610,2026-09-20, COCHABAMBA ,chocolate,19,15.75
+1611,2026-09-28,Cobija,galletas,18,8.24
+1612,2026-09-25,Cochabamba,leche,19,8.25
+1613,2026-09-29,Potosi,galletas,19,8.56
+1614,2026-09-02,La Paz,ARROZ,19,10.92
+1615,2026-09-17,La Paz,te,1,10.00
+1616,2026-09-20,Santa Cruz,chocolate,10,15.15
+1617,2026-09-06, EL ALTO ,jugo,3,6.18
+1618,2026-09-02,El Alto,arroz,19,11.88
+1619,2026-09-27,Cobija,HARINA,2,10.50
+1620,2026-09-14,La Paz,jugo,14,5.88
+1621,2026-09-08,Santa Cruz,te,13,10.80
+1622,2026-09-30,Oruro,azucar,15,9.00
+1623,2026-09-21,Sucre,cafe,9,26.50
+1624,2026-09-02, SUCRE ,TE,5,11.00
+1625,2026-09-08,Sucre,harina,10,9.45
+1626,2026-09-10,Sucre,chocolate,10,15.00
+1627,2026-09-12,Potosi,pan,2,0.81
+1628,2026-09-23,Trinidad,aceite,13,15.68
+1629,2026-09-03,Trinidad,ACEITE,3,15.84
+1630,2026-09-14,Santa Cruz,cafe,8,24.00
+1631,2026-09-12, POTOSI ,chocolate,3,14.70
+1632,2026-09-05,Oruro,pan,5,0.69
+1633,2026-09-29,Trinidad,chocolate,5,13.50
+1634,2026-09-01,Tarija,ARROZ,14,10.80
+1635,2026-09-26,Cochabamba,harina,10,10.61
+1636,2026-09-02,Sucre,azucar,13,9.27
+1637,2026-09-26,La Paz,pan,18,0.73
+1638,2026-09-10, SUCRE ,te,16,9.80
+1639,2026-09-19,La Paz,ACEITE,7,17.12
+1640,2026-09-27,Cobija,aceite,13,17.12
+1641,2026-09-20,Cobija,jugo,10,6.24
+1642,2026-09-12,Cochabamba,chocolate,1,13.80
+1643,2026-09-28,Sucre,chocolate,20,16.05
+1644,2026-09-16,La Paz,PAN,6,0.75
+1645,2026-09-02, ORURO ,pan,3,0.71
+1646,2026-09-30,Oruro,galletas,17,8.80
+1647,2026-09-24,La Paz,aceite,12,16.64
+1648,2026-10-02,Cobija,azucar,10,8.91
+1649,2026-09-09,Potosi,JUGO,19,5.94
+1650,2026-09-29,Potosi,aceite,3,16.96
+1651,2026-09-22,La Paz,arroz,17,11.88
+1652,2026-09-11, TARIJA ,jugo,2,6.12
+1653,2026-10-01,Oruro,harina,5,10.19
+1654,2026-09-05,Oruro,AGUA,4,3.57
+1655,2026-09-13,Santa Cruz,chocolate,10,14.85
+1656,2026-09-08,Tarija,harina,3,11.34
+1657,2026-09-11,Cobija,galletas,6,8.32
+1658,2026-09-27,Tarija,harina,6,11.13
+1659,2026-10-06, SANTA CRUZ ,CHOCOLATE,12,14.85
+1660,2026-09-03,Potosi,agua,15,3.26
+1661,2026-09-09,Tarija,jugo,19,6.06
+1662,2026-09-27,Sucre,harina,8,10.08
+1663,2026-09-27,Trinidad,chocolate,17,16.05
+1664,2026-09-02,Cobija,TE,9,9.80
+1665,2026-09-27,Sucre,agua,20,3.68
+1666,2026-09-16, COBIJA ,azucar,17,9.18
+1667,2026-09-13,El Alto,jugo,14,6.30
+1668,2026-09-13,Potosi,chocolate,14,15.60
+1669,2026-10-06,Santa Cruz,GALLETAS,8,7.84
+1670,2026-09-05,La Paz,harina,6,10.61
+1671,2026-09-21,El Alto,pan,18,0.68
+1672,2026-10-06,Cobija,chocolate,2,13.80
+1673,2026-09-01, COBIJA ,pan,7,0.80
+1674,2026-10-04,Tarija,AGUA,18,3.33
+1675,2026-10-03,Santa Cruz,azucar,2,8.91
+1676,2026-09-02,Cobija,te,16,9.80
+1677,2026-09-28,La Paz,jugo,16,5.40
+1678,2026-09-26,El Alto,harina,1,10.61
+1679,2026-09-09,Oruro,AGUA,1,3.26
+1680,2026-09-01, COBIJA ,galletas,5,7.28
+1681,2026-09-01,Cochabamba,jugo,3,6.30
+1682,2026-09-23,Cochabamba,cafe,13,26.25
+1683,2026-09-11,Cobija,arroz,9,10.80
+1684,2026-10-02,Potosi,CHOCOLATE,11,14.10
+1685,2026-09-28,Trinidad,pan,2,0.76
+1686,2026-09-27,Trinidad,aceite,19,15.68
+1687,2026-09-30, TARIJA ,chocolate,11,14.55
+1688,2026-09-21,Sucre,te,16,9.00
+1689,2026-09-21,Sucre,ARROZ,19,11.40
+1690,2026-09-03,Trinidad,pan,6,0.80
+1691,2026-09-02,Santa Cruz,azucar,20,9.63
+1692,2026-10-03,El Alto,aceite,2,15.36
+1693,2026-10-01,El Alto,agua,6,3.15
+1694,2026-09-03, ORURO ,TE,4,10.80
+1695,2026-09-26,Sucre,arroz,12,12.12
+1696,2026-10-06,Sucre,te,12,10.80
+1697,2026-09-25,El Alto,te,12,11.00
+1698,2026-09-27,Cobija,harina,4,9.77
+1699,2026-09-24,Cobija,TE,3,10.20
+1700,2026-09-20,El Alto,cafe,15,22.50
+1701,2026-09-01, TARIJA ,galletas,12,8.40
+1702,2026-09-25,El Alto,chocolate,8,14.55
+1703,2026-09-08,Potosi,jugo,12,6.60
+1704,2026-09-02,Cochabamba,ACEITE,13,16.16
+1705,2026-09-14,Tarija,azucar,16,8.28
+1706,2026-10-02,Oruro,arroz,20,10.92
+1707,2026-09-24,La Paz,cafe,10,23.25
+1708,2026-09-29, TRINIDAD ,galletas,1,7.60
+1709,2026-09-25,Trinidad,PAN,14,0.83
+1710,2026-09-25,Sucre,te,1,9.60
+1711,2026-09-29,Cobija,agua,4,3.36
+1712,2026-09-01,Potosi,pan,19,0.80
+1713,2026-10-06,El Alto,te,3,10.10
+1714,2026-09-05,Cobija,JUGO,17,5.52
+1715,2026-09-13, TRINIDAD ,aceite,11,16.00
+1716,2026-09-17,Potosi,te,3,10.80
+1717,2026-09-19,Cochabamba,azucar,14,8.91
+1718,2026-09-01,Cochabamba,aceite,2,15.84
+1719,2026-09-14,Potosi,AGUA,15,3.54
+1720,2026-09-08,Sucre,harina,8,11.55
+1721,2026-09-14,Sucre,harina,17,10.29
+1722,2026-09-19, ORURO ,te,18,9.80
+1723,2026-10-04,Santa Cruz,leche,18,7.95
+1724,2026-09-30,Cochabamba,ACEITE,13,17.12
+1725,2026-09-08,La Paz,te,5,9.60
+1726,2026-09-18,Cochabamba,pan,12,0.77
+1727,2026-09-22,Cobija,aceite,17,15.52
+1728,2026-09-11,Tarija,te,12,10.40
+1729,2026-09-23, SUCRE ,AGUA,7,3.57
+1730,2026-10-04,Santa Cruz,aceite,9,16.80
+1731,2026-09-07,Potosi,pan,10,0.79
+1732,2026-09-20,Oruro,chocolate,3,15.75
+1733,2026-10-01,Santa Cruz,galletas,12,8.00
+1734,2026-09-03,Trinidad,JUGO,12,6.48
+1735,2026-09-16,Santa Cruz,pan,6,0.77
+1736,2026-09-07, LA PAZ ,te,3,10.00
+1737,2026-09-13,Cochabamba,te,7,10.60
+1738,2026-09-22,El Alto,cafe,17,27.50
+1739,2026-09-03,Oruro,CAFE,13,27.25
+1740,2026-09-25,El Alto,azucar,15,8.82
+1741,2026-09-19,Trinidad,leche,14,7.05
+1742,2026-09-14,Trinidad,harina,17,10.61
+1743,2026-09-29, EL ALTO ,galletas,11,7.36
+1744,2026-09-15,Tarija,CHOCOLATE,15,14.70
+1745,2026-09-25,Potosi,chocolate,4,13.95
+1746,2026-09-09,Santa Cruz,cafe,10,24.00
+1747,2026-09-28,Oruro,galletas,6,7.84
+1748,2026-09-28,Tarija,harina,8,11.34
+1749,2026-09-01,Sucre,GALLETAS,16,8.40
+1750,2026-09-17, SUCRE ,leche,1,7.50
+1751,2026-10-04,Santa Cruz,chocolate,14,13.65
+1752,2026-10-03,Cochabamba,jugo,4,6.06
+1753,2026-09-03,Santa Cruz,aceite,11,14.40
+1754,2026-09-19,Potosi,GALLETAS,7,7.92
+1755,2026-09-12,Sucre,cafe,18,25.50
+1756,2026-09-05,Oruro,agua,11,3.85
+1757,2026-09-16, TARIJA ,te,5,10.10
+1758,2026-09-07,Santa Cruz,jugo,9,5.46
+1759,2026-09-02,Oruro,ARROZ,19,12.36
+1760,2026-09-16,Santa Cruz,agua,19,3.75
+1761,2026-10-02,Trinidad,jugo,15,6.36
+1762,2026-09-03,Tarija,aceite,5,16.32
+1763,2026-09-09,Tarija,harina,7,11.24
+1764,2026-09-21, TRINIDAD ,HARINA,4,9.98
+1765,2026-09-05,Sucre,te,16,9.80
+1766,2026-09-04,Cochabamba,aceite,9,14.56
+1767,2026-09-23,Trinidad,pan,7,0.72
+1768,2026-09-04,Trinidad,galletas,16,8.24
+1769,2026-09-10,Oruro,CAFE,12,25.50
+1770,2026-09-20,Oruro,te,7,9.80
+1771,2026-09-27, EL ALTO ,galletas,19,8.32
+1772,2026-09-17,Oruro,pan,7,0.83
+1773,2026-09-27,El Alto,te,12,10.80
+1774,2026-09-12,Cobija,JUGO,19,5.46
+1775,2026-09-19,Santa Cruz,harina,14,9.87
+1776,2026-09-29,Trinidad,harina,18,10.71
+1777,2026-09-25,El Alto,aceite,4,16.64
+1778,2026-09-26, TARIJA ,agua,9,3.43
+1779,2026-09-05,Potosi,ACEITE,6,16.80
+1780,2026-09-06,El Alto,aceite,4,16.96
+1781,2026-09-12,Sucre,agua,15,3.68
+1782,2026-09-18,Cochabamba,cafe,19,22.75
+1783,2026-09-07,Potosi,pan,7,0.80
+1784,2026-09-24,Tarija,CAFE,3,24.50
+1785,2026-09-05, TRINIDAD ,arroz,18,11.52
+1786,2026-09-23,Tarija,aceite,17,16.80
+1787,2026-09-01,Cobija,galletas,11,7.28
+1788,2026-09-03,Trinidad,aceite,11,17.44
+1789,2026-09-10,Tarija,PAN,15,0.78
+1790,2026-10-02,Cochabamba,pan,13,0.76
+1791,2026-09-03,Trinidad,pan,14,0.74
+1792,2026-10-02, TRINIDAD ,pan,20,0.78
+1793,2026-09-16,Oruro,cafe,5,26.50
+1794,2026-09-30,Trinidad,ACEITE,6,14.40
+1795,2026-09-24,Cochabamba,te,17,10.80
+1796,2026-09-27,Potosi,chocolate,12,16.35
+1797,2026-09-17,Cochabamba,galletas,19,8.08
+1798,2026-09-29,Trinidad,aceite,20,15.68
+1799,2026-09-15, SUCRE ,AGUA,7,3.26
+1800,2026-09-20,Sucre,te,10,10.00
+1801,2026-09-11,La Paz,agua,14,3.15
+1802,2026-10-04,Oruro,cafe,6,23.25
+1803,2026-09-06,Santa Cruz,arroz,3,11.40
+1804,2026-09-28,Cobija,PAN,15,0.73
+1805,2026-09-25,Potosi,arroz,13,11.28
+1806,2026-09-09, SUCRE ,chocolate,5,15.75
+1807,2026-09-10,Oruro,cafe,2,26.25
+1808,2026-09-11,Sucre,arroz,18,13.08
+1809,2026-09-26,Potosi,HARINA,9,10.50
+1810,2026-09-28,Santa Cruz,cafe,10,26.00
+1811,2026-09-06,Tarija,cafe,6,24.25
+1812,2026-09-11,Sucre,chocolate,20,14.55
+1813,2026-09-05, SANTA CRUZ ,harina,15,11.55
+1814,2026-09-27,Sucre,CHOCOLATE,16,13.80
+1815,2026-09-24,Sucre,jugo,14,6.36
+1816,2026-10-05,Oruro,harina,12,10.08
+1817,2026-09-17,Sucre,arroz,5,13.20
+1818,2026-09-12,La Paz,azucar,20,8.37
+1819,2026-09-09,Trinidad,CAFE,13,24.75
+1820,2026-09-12, POTOSI ,chocolate,17,16.50
+1821,2026-09-16,Sucre,aceite,8,15.36
+1822,2026-09-01,Trinidad,chocolate,14,16.50
+1823,2026-09-06,Potosi,aceite,17,16.48
+1824,2026-10-05,Santa Cruz,ARROZ,2,11.40
+1825,2026-09-26,Tarija,aceite,9,17.12
+1826,2026-09-16,Oruro,aceite,12,15.68
+1827,2026-09-10, SUCRE ,chocolate,8,13.95
+1828,2026-09-18,Trinidad,azucar,20,9.81
+1829,2026-09-23,Santa Cruz,GALLETAS,12,8.16
+1830,2026-09-26,Santa Cruz,harina,18,9.56
+1831,2026-09-19,Sucre,pan,8,0.74
+1832,2026-09-06,Potosi,cafe,20,26.00
+1833,2026-09-26,Tarija,azucar,11,8.82
+1834,2026-10-06, POTOSI ,ARROZ,2,11.52
+1835,2026-09-18,La Paz,pan,14,0.77
+1836,2026-09-18,Cobija,cafe,12,27.50
+1837,2026-09-24,Sucre,agua,7,3.71
+1838,2026-09-14,Trinidad,pan,18,0.74
+1839,2026-09-15,Potosi,PAN,13,0.68
+1840,2026-09-22,Oruro,azucar,8,9.72
+1841,2026-10-02, COCHABAMBA ,azucar,11,9.36
+1842,2026-09-08,Sucre,chocolate,15,13.95
+1843,2026-09-06,Tarija,galletas,18,8.80
+1844,2026-09-15,Cobija,PAN,20,0.69
+1845,2026-10-04,El Alto,leche,12,7.20
+1846,2026-09-11,El Alto,agua,4,3.68
+1847,2026-09-24,Oruro,arroz,7,12.48
+1848,2026-09-06, ORURO ,leche,11,7.50
+1849,2026-09-09,Santa Cruz,CAFE,5,25.50
+1850,2026-09-22,Santa Cruz,jugo,1,6.48
+1851,2026-09-28,El Alto,harina,12,10.50
+1852,2026-09-08,La Paz,galletas,20,8.32
+1853,2026-09-05,La Paz,galletas,9,7.84
+1854,2026-09-23,Cochabamba,ARROZ,14,11.64
+1855,2026-09-25, SUCRE ,cafe,16,26.75
+1856,2026-09-28,Cobija,azucar,14,9.00
+1857,2026-09-29,Potosi,azucar,10,9.72
+1858,2026-10-04,Cochabamba,azucar,12,9.90
+1859,2026-09-23,Trinidad,AGUA,8,3.64
+1860,2026-09-25,Santa Cruz,chocolate,10,13.65
+1861,2026-09-10,Oruro,agua,14,3.85
+1862,2026-09-05, LA PAZ ,aceite,20,14.40
+1863,2026-10-03,Tarija,pan,1,0.82
+1864,2026-09-14,El Alto,JUGO,8,5.70
+1865,2026-09-30,Oruro,pan,1,0.80
+1866,2026-09-21,Tarija,aceite,5,17.44
+1867,2026-09-04,Tarija,chocolate,3,13.80
+1868,2026-09-17,Santa Cruz,jugo,4,6.48
+1869,2026-09-19, SUCRE ,CAFE,6,26.50
+1870,2026-09-03,Trinidad,cafe,12,24.25
+1871,2026-09-07,Trinidad,leche,9,7.80
+1872,2026-09-03,Trinidad,harina,2,9.77
+1873,2026-09-12,Potosi,harina,5,10.19
+1874,2026-10-02,Trinidad,CAFE,8,23.25
+1875,2026-09-06,Tarija,aceite,13,16.00
+1876,2026-09-25, COBIJA ,aceite,9,15.36
+1877,2026-09-23,Trinidad,te,12,9.90
+1878,2026-09-07,Trinidad,pan,6,0.71
+1879,2026-09-27,Trinidad,CAFE,3,23.75
+1880,2026-09-24,Potosi,aceite,7,14.88
+1881,2026-09-12,Cobija,leche,12,7.80
+1882,2026-10-02,Sucre,aceite,17,14.88
+1883,2026-09-19, SANTA CRUZ ,harina,2,11.34
+1884,2026-09-30,Cobija,GALLETAS,3,7.28
+1885,2026-09-13,El Alto,cafe,10,26.50
+1886,2026-10-05,Santa Cruz,chocolate,17,13.50
+1887,2026-09-30,Potosi,chocolate,4,15.90
+1888,2026-09-22,Potosi,arroz,14,12.60
+1889,2026-09-12,Trinidad,AZUCAR,16,8.55
+1890,2026-09-15, COCHABAMBA ,galletas,10,7.92
+1891,2026-09-26,La Paz,pan,18,0.83
+1892,2026-09-08,Sucre,azucar,8,8.82
+1893,2026-09-29,Cochabamba,jugo,15,6.54
+1894,2026-09-02,Sucre,TE,9,10.50
+1895,2026-10-05,Cochabamba,chocolate,9,13.80
+1896,2026-09-30,La Paz,chocolate,16,16.35
+1897,2026-10-02, ORURO ,azucar,13,8.55
+1898,2026-09-26,Cochabamba,aceite,10,15.20
+1899,2026-09-26,Santa Cruz,PAN,18,0.68
+1900,2026-10-05,Cobija,leche,11,7.35
+1901,2026-09-19,El Alto,chocolate,4,15.45
+1902,2026-09-09,El Alto,te,18,9.70
+1903,2026-09-04,Trinidad,galletas,10,8.16
+1904,2026-10-04, EL ALTO ,AGUA,14,3.40
+1905,2026-09-04,Tarija,aceite,6,15.84
+1906,2026-09-19,El Alto,chocolate,9,14.70
+1907,2026-09-19,La Paz,harina,20,10.08
+1908,2026-09-22,Santa Cruz,arroz,5,12.48
+1909,2026-09-21,Tarija,AZUCAR,1,8.91
+1910,2026-10-05,Sucre,galletas,13,8.16
+1911,2026-09-20, SANTA CRUZ ,agua,18,3.71
+1912,2026-09-23,Cobija,agua,4,3.40
+1913,2026-09-05,Cobija,te,1,10.70
+1914,2026-09-11,Tarija,JUGO,7,6.06
+1915,2026-09-10,El Alto,jugo,18,6.48
+1916,2026-09-07,Cochabamba,te,18,9.60
+1917,2026-09-22,Trinidad,pan,12,0.71
+1918,2026-09-10, COBIJA ,jugo,12,6.60
+1919,2026-10-02,Santa Cruz,AZUCAR,8,8.55
+1920,2026-09-10,Trinidad,arroz,1,13.08
+1921,2026-09-21,Tarija,leche,2,7.28
+1922,2026-09-08,Trinidad,agua,12,3.61
+1923,2026-10-06,Cochabamba,aceite,19,17.44
+1924,2026-09-24,Santa Cruz,CHOCOLATE,15,15.60
+1925,2026-09-29, SUCRE ,agua,6,3.19
+1926,2026-09-08,Trinidad,aceite,20,17.44
+1927,2026-09-29,Oruro,aceite,10,15.52
+1928,2026-09-16,Tarija,jugo,2,5.88
+1929,2026-09-10,Cobija,AZUCAR,6,8.64
+1930,2026-09-23,Cochabamba,cafe,20,23.75
+1931,2026-09-22,Santa Cruz,pan,18,0.72
+1932,2026-09-03, ORURO ,arroz,4,11.52
+1933,2026-10-02,Oruro,pan,12,0.72
+1934,2026-09-09,La Paz,CAFE,20,24.75
+1935,2026-09-25,Tarija,agua,11,3.19
+1936,2026-09-04,Trinidad,harina,6,11.03
+1937,2026-10-02,La Paz,te,7,9.60
+1938,2026-09-10,Trinidad,aceite,20,16.00
+1939,2026-09-02, ORURO ,CAFE,16,26.00
+1940,2026-09-05,Cochabamba,te,19,9.20
+1941,2026-09-24,Cobija,jugo,7,5.82
+1942,2026-09-12,Potosi,azucar,4,8.73
+1943,2026-09-30,El Alto,harina,17,10.29
+1944,2026-09-18,Sucre,LECHE,9,7.43
+1945,2026-09-29,Potosi,galletas,15,8.72
+1946,2026-09-04, LA PAZ ,pan,20,0.74
+1947,2026-09-14,La Paz,agua,20,3.36
+1948,2026-10-05,Santa Cruz,harina,15,11.24
+1949,2026-09-15,Sucre,LECHE,20,7.35
+1950,2026-09-24,La Paz,leche,4,8.25
+1951,2026-09-11,Cochabamba,chocolate,9,14.55
+1952,2026-09-18,Cobija,jugo,11,6.30
+1953,2026-09-22, EL ALTO ,te,18,10.40
+1954,2026-09-27,Cochabamba,AGUA,10,3.15
+1955,2026-10-04,Oruro,chocolate,13,15.00
+1956,2026-09-29,Oruro,chocolate,5,13.50
+1957,2026-10-01,Cobija,harina,14,10.82
+1958,2026-09-21,Cobija,aceite,2,16.48
+1959,2026-09-28,Cobija,GALLETAS,2,7.28
+1960,2026-09-26, TARIJA ,agua,7,3.19
+1961,2026-09-19,Santa Cruz,arroz,7,12.12
+1962,2026-09-22,Oruro,azucar,14,9.90
+1963,2026-09-27,Trinidad,galletas,18,8.80
+1964,2026-09-06,Cobija,CHOCOLATE,16,13.65
+1965,2026-09-28,Sucre,aceite,3,15.20
+1966,2026-09-13,Sucre,agua,19,3.26
+1967,2026-09-17, LA PAZ ,aceite,8,14.72
+1968,2026-09-13,Sucre,galletas,18,8.40
+1969,2026-10-06,La Paz,AZUCAR,7,9.81
+1970,2026-09-02,El Alto,pan,19,0.72
+1971,2026-09-28,Trinidad,azucar,9,8.37
+1972,2026-09-23,El Alto,jugo,20,5.82
+1973,2026-09-02,Santa Cruz,harina,14,10.40
+1974,2026-09-24, ORURO ,GALLETAS,2,8.24
+1975,2026-09-23,Cochabamba,pan,18,0.71
+1976,2026-09-15,Santa Cruz,jugo,3,5.40
+1977,2026-09-26,La Paz,azucar,15,9.63
+1978,2026-09-03,Trinidad,te,19,9.70
+1979,2026-09-25,Oruro,PAN,18,0.69
+1980,2026-10-01,La Paz,te,1,9.00
+1981,2026-09-16, SANTA CRUZ ,chocolate,8,14.40
+1982,2026-09-28,Santa Cruz,leche,7,7.20
+1983,2026-09-24,Cobija,galletas,1,7.28
+1984,2026-09-01,Santa Cruz,CAFE,17,23.50
+1985,2026-09-16,Santa Cruz,agua,10,3.75
+1986,2026-09-22,La Paz,azucar,8,8.82
+1987,2026-10-06,Santa Cruz,harina,8,9.56
+1988,2026-09-07, ORURO ,cafe,14,24.50
+1989,2026-09-14,Cochabamba,JUGO,18,6.12
+1990,2026-09-16,Oruro,te,15,10.50
+1991,2026-10-03,Tarija,pan,13,0.74
+1992,2026-10-02,Santa Cruz,galletas,19,8.72
+1993,2026-09-09,Cobija,cafe,19,25.75
+1994,2026-09-26,Cochabamba,PAN,3,0.69
+1995,2026-09-14, LA PAZ ,azucar,12,9.63
+1996,2026-10-01,El Alto,cafe,1,24.75
+1997,2026-09-12,Tarija,arroz,4,12.96
+1998,2026-09-24,La Paz,azucar,9,8.46
+1999,2026-09-05,Oruro,HARINA,17,10.19
+2000,2026-09-20,Santa Cruz,aceite,4,15.68
+2001,2026-09-08,La Paz,te,11,10.40
+2002,2026-09-18, ORURO ,agua,20,3.75
+2003,2026-09-27,La Paz,pan,9,0.77
+2004,2026-09-08,Cobija,ACEITE,11,15.20
+2005,2026-10-06,Oruro,te,16,9.90
+2006,2026-09-13,Tarija,azucar,20,8.28
+2007,2026-09-02,Potosi,jugo,20,6.48
+2008,2026-10-01,Potosi,harina,19,10.29
+2009,2026-10-02, TARIJA ,HARINA,8,10.29
+2010,2026-09-14,Cochabamba,harina,19,11.03
+2011,2026-09-22,Cobija,galletas,3,8.40
+2012,2026-09-30,Santa Cruz,galletas,8,7.28
+2013,2026-09-26,Cobija,cafe,14,27.25

@@ -49,7 +49,7 @@ class CiSafetyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_seq_events([])
         events = [{"Application": "datalake_demo_ci", "CorrelationId": run, "Stage": stage,
-                   "ValidRows": 8, "RejectedRows": 6, "RevenueBs": "356.00"}
+                   "ValidRows": 2008, "RejectedRows": 6, "RevenueBs": "221634.82"}
                   for run in ("run-1", "run-2") for stage in ("bronze", "silver", "gold", "sql")]
         self.assertEqual(validate_seq_events(events)["stages_per_run"], 4)
         events[0]["@l"] = "Error"

@@ -10,7 +10,7 @@ from pathlib import Path
 from datalake_demo.config.settings import GOLD_KEY, QUALITY_KEY, REJECTED_KEY, SILVER_KEY, Settings
 from datalake_demo.etl.pipelines.ventas_pipeline import SalesPipeline
 
-SOURCE = Path(__file__).resolve().parents[1] / "data" / "ventas.csv"
+SOURCE = Path(__file__).resolve().parent / "fixtures" / "ventas.csv"
 
 
 class MemoryLake:
