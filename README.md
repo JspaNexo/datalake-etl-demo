@@ -42,3 +42,5 @@ docker compose exec dagster python -m unittest discover -s tests -v
 ```
 
 Consultas de ejemplo: [sql/consultas.sql](sql/consultas.sql).
+
+CI/CD con TeamCity: [configuracion y pasos](docs/teamcity.md).

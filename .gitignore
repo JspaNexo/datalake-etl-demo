@@ -1,5 +1,6 @@
 .env
 .venv/
+.venv-ci/
 __pycache__/
 *.pyc
 .dagster/
@@ -7,3 +8,5 @@ logs/
 *.egg-info/
 build/
 dist/
+artifacts/
+.teamcity/target/

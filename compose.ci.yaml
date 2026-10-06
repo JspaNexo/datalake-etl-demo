@@ -1,0 +1,78 @@
+# Servicios temporales para CI. El script asigna un proyecto unico por build.
+services:
+  minio:
+    image: datalake-ci-minio:RELEASE.2025-10-15T17-29-55Z
+    build:
+      context: .
+      dockerfile: Dockerfile.minio
+    environment:
+      MINIO_ROOT_USER: minio_ci
+      MINIO_ROOT_PASSWORD: minio_ci_password
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  postgres:
+    image: postgres:16.13-alpine
+    environment:
+      POSTGRES_USER: ci
+      POSTGRES_PASSWORD: postgres_ci_password
+      POSTGRES_DB: ventas_ci
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  seq:
+    image: datalust/seq:2026.1
+    environment:
+      ACCEPT_EULA: "Y"
+      SEQ_FIRSTRUN_NOAUTHENTICATION: "True"
+    volumes:
+      - seq_data:/data
+    healthcheck:
+      test: ["CMD", "/seqsvr/Client/seqcli", "node", "health", "-s", "http://localhost:80"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 15s
+
+  etl:
+    image: ${CI_ETL_IMAGE:?Indica la imagen construida mediante el script de CI}
+    command: ["python", "-c", "import time; time.sleep(86400)"]
+    environment:
+      APP_NAME: datalake_demo_ci
+      APP_ENV: ci
+      SOURCE_PATH: /app/data/ventas.csv
+      LOG_DIR: /app/logs
+      LOG_LEVEL: INFO
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ROOT_USER: minio_ci
+      MINIO_ROOT_PASSWORD: minio_ci_password
+      MINIO_BUCKET: datalake-ci
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: ci
+      POSTGRES_PASSWORD: postgres_ci_password
+      POSTGRES_DB: ventas_ci
+      SEQ_URL: http://seq:5341
+      SEQ_API_KEY: ""
+    depends_on:
+      minio:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      seq:
+        condition: service_healthy
+
+volumes:
+  minio_data:
+  postgres_data:
+  seq_data:

@@ -1,6 +1,7 @@
 .git
 .env
 .venv
+.venv-ci
 __pycache__
 **/__pycache__
 .dagster
@@ -9,4 +10,6 @@ logs
 pyworkerlogsdemo
 build
 dist
-
+artifacts
+.teamcity
+docs

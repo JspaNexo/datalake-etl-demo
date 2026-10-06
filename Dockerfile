@@ -4,6 +4,7 @@ COPY requirements.txt pyproject.toml README.md ./
 COPY src ./src
 RUN pip install --no-cache-dir -r requirements.txt
 COPY tests ./tests
+COPY scripts ./scripts
 COPY data ./data
 ENV PYTHONUNBUFFERED=1 DAGSTER_HOME=/var/lib/dagster
 RUN mkdir -p /var/lib/dagster
