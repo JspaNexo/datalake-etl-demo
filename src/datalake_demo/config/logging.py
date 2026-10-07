@@ -9,7 +9,7 @@ from datalake_demo.infra.file_storage import ensure_directory
 
 
 class SeqHttpHandler(logging.Handler):
-    """Envia eventos CLEF a Seq, como el handler de pyworkerlogsdemo."""
+    """Envía eventos estructurados a Seq mediante HTTP en formato CLEF."""
 
     LEVELS = {
         logging.NOTSET: "Verbose", logging.DEBUG: "Debug", logging.INFO: "Information",
@@ -48,7 +48,7 @@ class SeqHttpHandler(logging.Handler):
             "Logger": record.name,
         })
         for attribute, property_name in (
-            ("correlation_id", "CorrelationId"), ("iteration", "Iteration"), ("stage", "Stage"),
+            ("correlation_id", "CorrelationId"), ("stage", "Stage"),
         ):
             value = getattr(record, attribute, None)
             if value is not None:

@@ -2,8 +2,8 @@ import unittest
 from decimal import Decimal
 from pathlib import Path
 
-from datalake_demo.etl.extract import read_sales
-from datalake_demo.etl.transform import aggregate_sales, clean_sales
+from datalake_demo.infra.csv_source import read_sales
+from datalake_demo.domain.sales import aggregate_sales, clean_sales
 
 SOURCE = Path(__file__).resolve().parent / "fixtures" / "ventas.csv"
 

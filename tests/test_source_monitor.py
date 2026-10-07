@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from datalake_demo.jobs.source_monitor import evaluate_source_change
+from datalake_demo.jobs.source_monitor import evaluate_source_change, evaluate_content_change
 
 
 class SourceMonitorTests(unittest.TestCase):
@@ -68,3 +68,13 @@ class SourceMonitorTests(unittest.TestCase):
         self.assertIsNone(evaluate_source_change(self.source, skipped.cursor).run_key)
         self.source.unlink()
         self.assertIsNone(evaluate_source_change(self.source, None).run_key)
+
+
+    def test_database_changes_do_not_require_a_quiet_period(self):
+        cursor = None
+        for digest in ("A", "B", "C", "A"):
+            change = evaluate_content_change(digest, cursor, stable_readings=1, run_key_prefix="ventas_db")
+            self.assertIsNotNone(change.run_key)
+            self.assertEqual(change.sha256, digest)
+            cursor = change.cursor
+        self.assertIsNone(evaluate_content_change("A", cursor, stable_readings=1).run_key)

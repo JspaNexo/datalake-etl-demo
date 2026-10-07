@@ -10,6 +10,9 @@ from scripts.ci.prepare_release import prepare_release
 from scripts.ci.run_integration import run_integration, validate_compose_config, validate_project_name, validate_seq_events
 
 
+EXPECTED_CSV = json.loads((Path(__file__).parent / "fixtures" / "ventas.expected.json").read_text(encoding="utf-8"))
+
+
 class CiSafetyTests(unittest.TestCase):
     def setUp(self):
         self.project = "datalake-ci-test123"
@@ -47,14 +50,16 @@ class CiSafetyTests(unittest.TestCase):
 
     def test_incomplete_logs_do_not_count_as_successful_integration(self):
         with self.assertRaises(ValueError):
-            validate_seq_events([])
+            validate_seq_events([], {"csv": EXPECTED_CSV})
         events = [{"Application": "datalake_demo_ci", "CorrelationId": run, "Stage": stage,
-                   "ValidRows": 2008, "RejectedRows": 6, "RevenueBs": "221634.82"}
+                   "ValidRows": EXPECTED_CSV["valid_rows"], "RejectedRows": EXPECTED_CSV["rejected_rows"], "RevenueBs": EXPECTED_CSV["revenue_bs"],
+                   "SourceType": "csv", "Dataset": "ventas", "ExecutionId": run, "Revision": 1,
+                   "PublicationStatus": "published", "ManifestKey": "manifest"}
                   for run in ("run-1", "run-2") for stage in ("bronze", "silver", "gold", "sql")]
-        self.assertEqual(validate_seq_events(events)["stages_per_run"], 4)
+        self.assertEqual(validate_seq_events(events, {"csv": EXPECTED_CSV})["stages_per_run"], 4)
         events[0]["@l"] = "Error"
         with self.assertRaises(ValueError):
-            validate_seq_events(events)
+            validate_seq_events(events, {"csv": EXPECTED_CSV})
 
     def test_existing_project_is_not_started_or_cleaned_up(self):
         result = SimpleNamespace(stdout=json.dumps(self.config), stderr="", returncode=0)
@@ -65,6 +70,23 @@ class CiSafetyTests(unittest.TestCase):
                 run_integration("datalake-etl-demo:test", self.project, Path(directory))
         self.assertEqual(execute.call_count, 1)
         self.assertIn("config", execute.call_args.args[0])
+
+    def test_seq_checks_both_sources_and_rejects_mixed_tags(self):
+        expected_db = dict(valid_rows=570, rejected_rows=0, revenue_bs='30000.00')
+        events = []
+        for source, expected in [('csv', EXPECTED_CSV),
+                                 ('postgres', expected_db)]:
+            for run in (1, 2):
+                for stage in ('bronze', 'silver', 'gold', 'sql'):
+                    events.append(dict(Application='datalake_demo_ci', CorrelationId=f'{source}-{run}',
+                                       SourceType=source, Dataset='ventas' if source == 'csv' else 'ventas_db',
+                                       ExecutionId=f'{source}-{run}', Revision=run, PublicationStatus='published', ManifestKey='manifest',
+                                       Stage=stage, ValidRows=expected['valid_rows'],
+                                       RejectedRows=expected['rejected_rows'], RevenueBs=expected['revenue_bs']))
+        self.assertEqual(validate_seq_events(events, {"csv": EXPECTED_CSV, "postgres": expected_db})['source_runs'], dict(csv=2, postgres=2))
+        events[-1]['SourceType'] = 'csv'
+        with self.assertRaises(ValueError):
+            validate_seq_events(events, {"csv": EXPECTED_CSV, "postgres": expected_db})
 
     def test_startup_failure_still_cleans_owned_resources_and_marks_failure(self):
         commands = []

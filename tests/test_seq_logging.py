@@ -18,7 +18,6 @@ class SeqLoggingTests(unittest.TestCase):
         handler = SeqHttpHandler(Settings(seq_url="http://seq:5341/", seq_api_key="test-key"))
         record = logging.LogRecord("ventas", logging.INFO, __file__, 1, "Silver: %s ventas", (8,), None)
         record.correlation_id = "run-test"
-        record.iteration = 1
         record.stage = "silver"
         record.properties = {"ValidRows": 8, "RejectedRows": 6}
         with patch("datalake_demo.config.logging.urlopen") as send:
@@ -35,7 +34,7 @@ class SeqLoggingTests(unittest.TestCase):
         self.assertTrue(event["@t"].endswith("+00:00"))
         self.assertEqual((event["Application"], event["Environment"], event["Logger"]),
                          ("datalake_demo", "demo", "ventas"))
-        self.assertEqual((event["CorrelationId"], event["Stage"], event["Iteration"]), ("run-test", "silver", 1))
+        self.assertEqual((event["CorrelationId"], event["Stage"]), ("run-test", "silver"))
         self.assertEqual((event["ValidRows"], event["RejectedRows"]), (8, 6))
 
     def test_exception_detail_and_optional_authentication(self):

@@ -1,20 +1,21 @@
 """Todas las variables de entorno se resuelven al iniciar un job."""
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
-
-SILVER_KEY = "silver/ventas/ventas_limpias.parquet"
-REJECTED_KEY = "silver/ventas/rechazados.json"
-QUALITY_KEY = "silver/ventas/calidad.json"
-GOLD_KEY = "gold/ventas/ventas_diarias.parquet"
-
 
 @dataclass(frozen=True)
 class Settings:
     app_name: str = "datalake_demo"
     app_env: str = "demo"
     source_path: Path = Path("data/ventas.csv")
+    source_type: str = "csv"
+    dataset: str = "ventas"
+    source_postgres_host: str = "localhost"
+    source_postgres_port: int = 5433
+    source_postgres_db: str = "ventas_origen"
+    source_postgres_user: str = "operacion"
+    source_postgres_password: str = field(default="operacion_demo_2026", repr=False)
     log_dir: Path = Path("logs")
     log_file_name: str = "ventas_etl.log"
     log_level: str = "INFO"
@@ -31,6 +32,21 @@ class Settings:
     postgres_user: str = "demo"
     postgres_password: str = field(default="postgres_demo_2026", repr=False)
 
+    def __post_init__(self):
+        if (self.source_type, self.dataset) not in {("csv", "ventas"), ("postgres", "ventas_db")}:
+            raise ValueError("La fuente y el dataset deben corresponder al perfil CSV o PostgreSQL")
+
+    def for_database_source(self) -> "Settings":
+        return replace(self, source_type="postgres", dataset="ventas_db")
+
+    @property
+    def gold_table(self) -> str:
+        return "ventas_db_diarias" if self.dataset == "ventas_db" else "ventas_diarias"
+
+    @property
+    def quality_table(self) -> str:
+        return "calidad_db" if self.dataset == "ventas_db" else "calidad"
+
     @property
     def log_file_path(self) -> Path:
         return self.log_dir / self.log_file_name
@@ -44,6 +60,11 @@ class Settings:
             app_name=os.getenv("APP_NAME", "datalake_demo"),
             app_env=os.getenv("APP_ENV", "demo"),
             source_path=Path(os.getenv("SOURCE_PATH", "data/ventas.csv")),
+            source_postgres_host=os.getenv("SOURCE_POSTGRES_HOST", "localhost"),
+            source_postgres_port=int(os.getenv("SOURCE_POSTGRES_PORT", "5433")),
+            source_postgres_db=os.getenv("SOURCE_POSTGRES_DB", "ventas_origen"),
+            source_postgres_user=os.getenv("SOURCE_POSTGRES_USER", "operacion"),
+            source_postgres_password=os.getenv("SOURCE_POSTGRES_PASSWORD", "operacion_demo_2026"),
             log_dir=Path(os.getenv("LOG_DIR", "logs")),
             log_file_name=os.getenv("LOG_FILE_NAME", "ventas_etl.log"),
             log_level=os.getenv("LOG_LEVEL", "INFO").upper(),

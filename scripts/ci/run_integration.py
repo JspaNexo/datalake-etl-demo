@@ -34,26 +34,49 @@ def validate_compose_config(config: dict, project: str) -> None:
                 raise ValueError(f"Los recursos de {category} deben pertenecer exclusivamente al proyecto de CI")
 
 
-def validate_seq_events(events: list[dict]) -> dict:
+def validate_seq_events(events: list[dict], expected_by_source: dict[str, dict]) -> dict:
     groups = {}
     for event in events:
         if event.get("Application") != "datalake_demo_ci":
             continue
         correlation = event.get("CorrelationId")
-        if not correlation:
-            raise ValueError("Un evento del ETL no tiene CorrelationId")
-        if event.get("@l") in {"Error", "Fatal"}:
-            raise ValueError("Seq recibio un error durante la integracion")
-        groups.setdefault(correlation, {})[event.get("Stage")] = event
+        if not correlation or event.get("@l") in {"Error", "Fatal"}:
+            raise ValueError("Seq recibio un error o un evento sin CorrelationId")
+        stages = groups.setdefault(correlation, {})
+        stage = event.get("Stage")
+        if stage in stages:
+            raise ValueError("Evento de etapa duplicado")
+        stages[stage] = event
     expected_stages = {"bronze", "silver", "gold", "sql"}
-    if len(groups) != 2 or any(set(stages) != expected_stages for stages in groups.values()):
-        raise ValueError("Seq debe contener las cuatro etapas de las dos ejecuciones de Dagster")
-    for stages in groups.values():
-        if stages["silver"].get("ValidRows") != 2008 or stages["silver"].get("RejectedRows") != 6:
-            raise ValueError("Las metricas silver de Seq no coinciden con los datos de prueba")
-        if stages["gold"].get("RevenueBs") != "221634.82":
-            raise ValueError("Los ingresos gold de Seq no coinciden con los datos de prueba")
-    return {"runs": sorted(groups), "stages_per_run": 4, "seq_events": len(events)}
+    if len(groups) != 2 * len(expected_by_source) or any(set(stages) != expected_stages for stages in groups.values()):
+        raise ValueError("Seq debe contener las cuatro etapas de dos ejecuciones por fuente")
+    source_runs = dict.fromkeys(expected_by_source, 0)
+    for correlation, stages in groups.items():
+        first = stages["bronze"]
+        source_type = first.get("SourceType")
+        if source_type not in expected_by_source:
+            raise ValueError("Fuente inesperada en Seq")
+        identity = (source_type, first.get("Dataset"), first.get("ExecutionId"), first.get("Revision"))
+        if not identity[2] or not isinstance(identity[3], int) or identity[3] < 1:
+            raise ValueError("Falta identidad de la version")
+        if identity[1] != ("ventas" if source_type == "csv" else "ventas_db"):
+            raise ValueError("Dataset incorrecto en Seq")
+        if any((e.get("SourceType"), e.get("Dataset"), e.get("ExecutionId"), e.get("Revision")) != identity
+               for e in stages.values()):
+            raise ValueError("Las etapas deben identificar la misma version y fuente")
+        source_runs[source_type] += 1
+        expected = expected_by_source[source_type]
+        if expected.get("runs") and correlation not in expected["runs"]:
+            raise ValueError("El evento no pertenece a las ejecuciones verificadas")
+        if stages["silver"].get("ValidRows") != expected["valid_rows"] or stages["silver"].get("RejectedRows") != expected["rejected_rows"]:
+            raise ValueError("Las metricas Silver no coinciden con el informe de integracion")
+        if stages["gold"].get("RevenueBs") != expected["revenue_bs"]:
+            raise ValueError("Los ingresos Gold no coinciden con el informe de integracion")
+        if stages["sql"].get("PublicationStatus") != "published" or not stages["sql"].get("ManifestKey"):
+            raise ValueError("La publicacion no fue confirmada")
+    if any(count != 2 for count in source_runs.values()):
+        raise ValueError("Se necesitan dos ejecuciones de cada fuente")
+    return {"runs": sorted(groups), "stages_per_run": 4, "seq_events": len(events), "source_runs": source_runs}
 
 
 def execute(command: list[str], env: dict, *, log_file: Path | None = None, check: bool = True):
@@ -106,19 +129,29 @@ def run_integration(image: str, project: str, artifacts: Path) -> None:
                              "import importlib.metadata; print(importlib.metadata.version('datalake-demo'))"], env).stdout.strip()
         print(f"Verificando paquete datalake-demo {package_version}; imagen {image_id}", flush=True)
         execute([*compose, "exec", "-T", "etl", "datalake-verify"], env, log_file=artifacts / "etl.log")
+        execute([*compose, 'exec', '-T', 'etl', 'python', '-m', 'datalake_demo.jobs.verify_ventas_db'], env,
+                log_file=artifacts / 'etl-db.log')
+        execute([*compose, 'cp', 'etl:/app/artifacts/db-summary.json', str(artifacts / 'db-summary.json')], env)
+        database_expected = json.loads((artifacts / 'db-summary.json').read_text(encoding='utf-8'))
+        execute([*compose, 'cp', 'etl:/app/artifacts/csv-summary.json', str(artifacts / 'csv-summary.json')], env)
+        csv_expected = json.loads((artifacts / 'csv-summary.json').read_text(encoding='utf-8'))
+
         deadline = time.monotonic() + 20
         while True:
             result = execute([*compose, "exec", "-T", "seq", "/seqsvr/Client/seqcli", "search",
                               "-s", "http://localhost:80", "-f", "Application = 'datalake_demo_ci'", "-c", "30", "--json"], env)
             events = [json.loads(line) for line in result.stdout.splitlines() if line.strip()]
             try:
-                summary = validate_seq_events(events)
+                summary = validate_seq_events(events, {"csv": csv_expected, "postgres": database_expected})
                 break
             except ValueError:
                 if time.monotonic() >= deadline:
                     raise
                 time.sleep(1)
         (artifacts / "seq-events.json").write_text(json.dumps(events, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+        execute([*compose, "exec", "-T", "etl", "python", "-B", "-m", "unittest", "discover",
+                 "-s", "tests/integration", "-v"], env, log_file=artifacts / "regression.log")
         execute([*compose, "cp", "etl:/app/logs", str(artifacts / "app-logs")], env)
     except (Exception, KeyboardInterrupt) as error:
         failure = error

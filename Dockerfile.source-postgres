@@ -1,0 +1,2 @@
+FROM postgres:16.13-alpine
+COPY sql/source/001_operacion.sql /docker-entrypoint-initdb.d/001_operacion.sql

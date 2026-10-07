@@ -30,6 +30,23 @@ services:
       timeout: 3s
       retries: 30
 
+  source_postgres:
+    image: datalake-source-postgres:16.13-alpine
+    build:
+      context: .
+      dockerfile: Dockerfile.source-postgres
+    environment:
+      POSTGRES_USER: source_ci
+      POSTGRES_PASSWORD: source_ci_password
+      POSTGRES_DB: ventas_origen_ci
+    volumes:
+      - source_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
   seq:
     image: datalust/seq:2026.1
     environment:
@@ -50,7 +67,12 @@ services:
     environment:
       APP_NAME: datalake_demo_ci
       APP_ENV: ci
-      SOURCE_PATH: /app/data/ventas.csv
+      SOURCE_PATH: /app/tests/fixtures/ventas.csv
+      SOURCE_POSTGRES_HOST: source_postgres
+      SOURCE_POSTGRES_PORT: "5432"
+      SOURCE_POSTGRES_DB: ventas_origen_ci
+      SOURCE_POSTGRES_USER: source_ci
+      SOURCE_POSTGRES_PASSWORD: source_ci_password
       LOG_DIR: /app/logs
       LOG_LEVEL: INFO
       MINIO_ENDPOINT: http://minio:9000
@@ -71,8 +93,11 @@ services:
         condition: service_healthy
       seq:
         condition: service_healthy
+      source_postgres:
+        condition: service_healthy
 
 volumes:
   minio_data:
   postgres_data:
   seq_data:
+  source_postgres_data:

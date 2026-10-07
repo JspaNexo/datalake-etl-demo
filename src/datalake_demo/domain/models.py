@@ -1,26 +1,39 @@
-from dataclasses import dataclass
+"""Datos del negocio: no conocen archivos, bases de datos ni orquestadores."""
 
-CSV_COLUMNS = ("venta_id", "fecha", "ciudad", "producto", "cantidad", "precio_unitario")
-
-
-@dataclass(frozen=True)
-class ExtractedSales:
-    """Contenido original, filas leidas e identidad del archivo de entrada."""
-
-    payload: bytes
-    rows: list[dict]
-    sha256: str
-
-    @property
-    def bronze_key(self) -> str:
-        return f"bronze/ventas/{self.sha256}.csv"
+from datetime import date
+from decimal import Decimal
+from typing import TypedDict
 
 
-@dataclass(frozen=True)
-class SilverBatch:
-    """Resultado de limpiar un archivo: ventas aceptadas, rechazos y calidad."""
+class RawSale(TypedDict):
+    venta_id: str
+    fecha: str
+    ciudad: str
+    producto: str
+    cantidad: str
+    precio_unitario: str
 
-    sales: list[dict]
-    rejected: list[dict]
-    quality: dict
 
+class Sale(TypedDict):
+    venta_id: int
+    fecha: date
+    ciudad: str
+    producto: str
+    cantidad: int
+    precio_unitario: Decimal
+    importe: Decimal
+
+
+class GoldRow(TypedDict):
+    fecha: date
+    ciudad: str
+    producto: str
+    ventas: int
+    unidades: int
+    ingresos: Decimal
+
+
+class RejectedSale(TypedDict):
+    registro: int
+    datos: dict
+    motivo: str

@@ -1,1 +1,1 @@
-"""ETL de ventas organizado como el proyecto de referencia pyworkerlogsdemo."""
+"""ETL de ventas desde CSV y PostgreSQL con arquitectura medallion."""
