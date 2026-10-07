@@ -10,6 +10,7 @@ Proyecto simple de análisis de ventas con arquitectura limpia para ETL en Pytho
 - Ejecuta el ETL con Dagster y consulta los resultados con SQLPad/PostgreSQL.
 - Detecta cambios en las fuentes y ejecuta automáticamente el ETL con sensores de Dagster.
 - Guarda los logs en archivo y envía los eventos a Seq vía HTTP.
+- Incluye un worker que envía un log cada 60 segundos a Seq y a `logs/worker_log.txt`.
 
 ## Requisitos
 

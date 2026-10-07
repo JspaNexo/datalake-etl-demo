@@ -48,7 +48,7 @@ class SeqHttpHandler(logging.Handler):
             "Logger": record.name,
         })
         for attribute, property_name in (
-            ("correlation_id", "CorrelationId"), ("stage", "Stage"),
+            ("correlation_id", "CorrelationId"), ("iteration", "Iteration"), ("stage", "Stage"),
         ):
             value = getattr(record, attribute, None)
             if value is not None:
@@ -66,7 +66,10 @@ def get_logger(settings: Settings) -> logging.Logger:
         return logger
 
     ensure_directory(settings.log_dir)
-    formatter = logging.Formatter("%(asctime)s | %(levelname)s | %(name)s | %(message)s")
+    formatter = logging.Formatter(
+        fmt="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
     file_handler = RotatingFileHandler(
         settings.log_file_path, maxBytes=1_000_000, backupCount=2, encoding="utf-8",
     )

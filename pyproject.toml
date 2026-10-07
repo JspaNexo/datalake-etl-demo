@@ -20,10 +20,10 @@ dependencies = [
 [project.scripts]
 datalake-sync = "datalake_demo.jobs.run_ventas_sync:main"
 datalake-verify = "datalake_demo.jobs.verify_ventas:verify"
+datalake-log-worker = "datalake_demo.jobs.run_log_worker:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

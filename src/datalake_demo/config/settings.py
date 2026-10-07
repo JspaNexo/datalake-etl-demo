@@ -1,6 +1,7 @@
 """Todas las variables de entorno se resuelven al iniciar un job."""
 
 import os
+from math import isfinite
 from dataclasses import dataclass, field, replace
 from pathlib import Path
 
@@ -22,6 +23,8 @@ class Settings:
     seq_url: str = "http://localhost:5341"
     seq_api_key: str = field(default="", repr=False)
     seq_timeout_seconds: float = 5.0
+    worker_interval_seconds: float = 60.0
+    worker_log_file_name: str = "worker_log.txt"
     minio_endpoint: str = "http://localhost:9000"
     minio_user: str = "minio_demo"
     minio_password: str = field(default="minio_demo_2026", repr=False)
@@ -35,6 +38,8 @@ class Settings:
     def __post_init__(self):
         if (self.source_type, self.dataset) not in {("csv", "ventas"), ("postgres", "ventas_db")}:
             raise ValueError("La fuente y el dataset deben corresponder al perfil CSV o PostgreSQL")
+        if not isfinite(self.worker_interval_seconds) or self.worker_interval_seconds <= 0:
+            raise ValueError("WORKER_INTERVAL_SECONDS debe ser un numero positivo y finito")
 
     def for_database_source(self) -> "Settings":
         return replace(self, source_type="postgres", dataset="ventas_db")
@@ -71,6 +76,8 @@ class Settings:
             seq_url=os.getenv("SEQ_URL", "http://localhost:5341"),
             seq_api_key=os.getenv("SEQ_API_KEY", ""),
             seq_timeout_seconds=float(os.getenv("SEQ_TIMEOUT_SECONDS", "5")),
+            worker_interval_seconds=float(os.getenv("WORKER_INTERVAL_SECONDS", "60")),
+            worker_log_file_name=os.getenv("WORKER_LOG_FILE_NAME", "worker_log.txt"),
             minio_endpoint=os.getenv("MINIO_ENDPOINT", "http://localhost:9000"),
             minio_user=os.getenv("MINIO_ROOT_USER", "minio_demo"),
             minio_password=os.getenv("MINIO_ROOT_PASSWORD", "minio_demo_2026"),

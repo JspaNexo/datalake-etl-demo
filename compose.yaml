@@ -111,6 +111,28 @@ services:
       source_postgres:
         condition: service_healthy
 
+  worker:
+    build: .
+    command: ["datalake-log-worker"]
+    restart: unless-stopped
+    stop_grace_period: 15s
+    environment:
+      APP_NAME: ${APP_NAME:-datalake_demo}
+      APP_ENV: ${APP_ENV:-demo}
+      LOG_DIR: /app/logs
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      WORKER_INTERVAL_SECONDS: ${WORKER_INTERVAL_SECONDS:-60}
+      WORKER_LOG_FILE_NAME: ${WORKER_LOG_FILE_NAME:-worker_log.txt}
+      SEQ_URL: http://seq:5341
+      SEQ_API_KEY: ${SEQ_API_KEY:-}
+      SEQ_TIMEOUT_SECONDS: ${SEQ_TIMEOUT_SECONDS:-5}
+    volumes:
+      - ./src:/app/src:ro
+      - ./logs:/app/logs
+    depends_on:
+      seq:
+        condition: service_healthy
+
   sqlpad:
     image: sqlpad/sqlpad:7.5.7
     environment:
