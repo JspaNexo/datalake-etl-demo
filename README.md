@@ -12,6 +12,8 @@ Demo de un ETL en Python que procesa ventas desde CSV y PostgreSQL, guarda las c
 6. **Incorporar consultas y logs.** Se configuraron SQLPad para consultar origen y Gold, Seq para los eventos del ETL y un worker que registra actividad cada 60 segundos en Seq y `logs/worker_log.txt`.
 7. **Agregar pruebas e integración continua.** Se incluyeron pruebas de datos, arquitectura, versiones y fallos. El pipeline de [TeamCity](.teamcity/settings.kts) ejecuta pruebas, construye Docker, verifica ambas fuentes y genera archivos de entrega. La publicación de imagen está desactivada y el despliegue automático queda pendiente.
 
+En Windows, iniciar el agente de TeamCity una sola vez: como servicio o manualmente. Dos procesos con la misma instalación duplican el build y provocan conflictos en Docker y en los archivos del monitor de rendimiento.
+
 ## Cómo ejecutar y comprobar la demo
 
 Con Docker Desktop en modo de contenedores Linux, ejecutar desde la raíz del proyecto:
